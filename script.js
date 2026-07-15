@@ -1,0 +1,1 @@
+document.querySelector('.search button').addEventListener('click',()=>{const q=document.querySelector('.search input').value.trim();if(q) alert(`“${q}” 검색 페이지는 상품 데이터 연동 단계에서 연결됩니다.`)});document.querySelector('.search input').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();document.querySelector('.search button').click()}});
