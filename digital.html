@@ -36,6 +36,50 @@
 }
 </style>
 
+
+<style>
+/* 최종 헤더/카드 보정 */
+.header-inner{
+  max-width:1180px;
+  margin:0 auto;
+  padding-left:24px;
+  padding-right:24px;
+}
+nav{
+  overflow:visible !important;
+  scrollbar-width:none;
+}
+nav::-webkit-scrollbar{display:none}
+
+.thumb.product-photo-card{
+  height:190px !important;
+  padding:0 !important;
+  overflow:hidden !important;
+  background:#c9cacc !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+.thumb.product-photo-card img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center !important;
+  display:block !important;
+}
+
+@media(max-width:1050px){
+  .header-inner{
+    max-width:none;
+  }
+  nav{
+    overflow-x:auto !important;
+    overflow-y:hidden !important;
+    padding-bottom:2px;
+  }
+}
+</style>
+
 </head>
 <body>
 <header><div class="wrap header-inner"><a class="logo" href="index.html">싸게<span>살래</span></a><nav><a href="index.html">홈</a><a class="active" href="digital.html">가전·디지털</a><a href="#">생활·주방</a><a href="#">식품·건강</a><a href="#">뷰티·미용</a><a href="#">출산·육아</a><a href="#">스포츠·레저</a><a href="#">반려동물</a><a href="#">패션·잡화</a><a href="#">도서·취미</a></nav><form class="search"><input placeholder="검색어를 입력하세요"><button type="button">⌕</button></form></div></header>
@@ -54,7 +98,17 @@
             <span class="link">최저가 확인하기 →</span>
           </div>
         </a>
-<a class="card" href="refrigerator-guide.html"><div class="thumb">🧊</div><div class="card-body"><span class="tag">냉장고</span><h3>냉장고 추천 BEST 7</h3><p>용도별, 가격대별 인기 냉장고를 비교하고 우리 집에 맞는 제품을 찾아보세요.</p><span class="link">자세히 보기 →</span></div></a>
+<a class="card" href="sony-zv-e10m2k-white.html">
+          <div class="thumb product-photo-card">
+            <img src="sony-zv-e10m2k-white-card.png" alt="소니 ZV-E10M2K 화이트 브이로그 카메라">
+          </div>
+          <div class="card-body">
+            <span class="tag">브이로그 카메라</span>
+            <h3>소니 ZV-E10M2K(화이트) 최저가 가격</h3>
+            <p>APS-C 약 26MP 센서와 4K 60p를 지원하는 ZV-E10 II 16-50mm 렌즈킷을 확인해보세요.</p>
+            <span class="link">최저가 확인하기 →</span>
+          </div>
+        </a>
 <a class="card" href="washing-machine-guide.html"><div class="thumb">🌀</div><div class="card-body"><span class="tag">세탁기</span><h3>세탁기 종류와 선택 가이드</h3><p>드럼과 통돌이, 세탁 용량, 건조 기능까지 세탁기 선택의 모든 것을 알아봅니다.</p><span class="link">자세히 보기 →</span></div></a>
 <a class="card" href="robot-vacuum-guide.html"><div class="thumb">🤖</div><div class="card-body"><span class="tag">로봇청소기</span><h3>로봇청소기 추천 & 비교</h3><p>흡입력, 물걸레 기능, 센서, 배터리 성능 등 핵심 비교 포인트를 확인하세요.</p><span class="link">자세히 보기 →</span></div></a>
 <a class="card" href="laptop-guide.html"><div class="thumb">💻</div><div class="card-body"><span class="tag">노트북</span><h3>노트북 추천 가이드</h3><p>사무용, 대학생, 게이밍, 영상 편집 등 용도별 노트북 선택 기준을 비교합니다.</p><span class="link">자세히 보기 →</span></div></a>
