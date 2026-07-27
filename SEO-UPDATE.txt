@@ -1,0 +1,19 @@
+싸게살래 전체 SEO 업데이트 완료
+
+적용 항목
+- 전 페이지 Open Graph 제목/설명/URL/이미지
+- Twitter Card
+- canonical URL
+- robots 메타태그
+- favicon 연결
+- 이미지 alt, loading, decoding 최적화
+- Organization, WebSite/CollectionPage, Product, Breadcrumb, FAQ 구조화 데이터
+- sitemap.xml 재정리
+- robots.txt 재정리
+
+중복 파일 처리
+- digital(1).html → canonical digital.html / noindex
+- sony-a7c2-final.html → canonical sony-a7c2.html / noindex
+
+업로드 방법
+GitHub 저장소 최상위에 이 ZIP의 파일을 모두 덮어쓰기 업로드하세요.
