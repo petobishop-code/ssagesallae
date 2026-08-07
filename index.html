@@ -34,6 +34,21 @@
 .search-results .empty{padding:14px 16px;color:#888;font-size:13px}
 </style>
 
+
+<style data-search-button-fix="true">
+.search button,
+#site-search-btn{
+  position:relative !important;
+  z-index:20 !important;
+  pointer-events:auto !important;
+  cursor:pointer !important;
+}
+.search input{
+  position:relative !important;
+  z-index:10 !important;
+}
+</style>
+
 </head>
 <body>
 <header class="top">
@@ -44,7 +59,7 @@
 </a>
 <form class="search">
 <input aria-label="상품 검색" placeholder="찾고 싶은 상품을 검색해보세요!"/>
-<button type="submit">⌕</button>
+<button type="button" id="site-search-btn" aria-label="검색">⌕</button>
 </form>
 <div class="quick">
 <a href="#best">
@@ -705,15 +720,36 @@ document.addEventListener("DOMContentLoaded", function(){
   input.addEventListener("input", ()=>render(input.value));
   input.addEventListener("focus", ()=>{ if(input.value.trim()) render(input.value); });
 
-  form.addEventListener("submit", function(e){
-    e.preventDefault();
+  function runSearch(){
     const q=input.value.trim();
     if(!q){ input.focus(); return; }
     const list=find(q);
-    if(list.length) location.href=list[0].url;
-    else {
+    if(list.length){
+      window.location.href=list[0].url;
+    } else {
       box.innerHTML='<div class="empty">검색 결과가 없습니다.</div>';
       box.classList.add("show");
+    }
+  }
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    runSearch();
+  });
+
+  const searchBtn = document.getElementById("site-search-btn");
+  if(searchBtn){
+    searchBtn.addEventListener("click", function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      runSearch();
+    });
+  }
+
+  input.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){
+      e.preventDefault();
+      runSearch();
     }
   });
 
