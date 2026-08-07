@@ -1,239 +1,621 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>가전·디지털 | 싸게살래</title>
-<meta content="에어컨, 제습기, 공기청정기, 가습기 등 가전·디지털 인기 상품을 한눈에 확인하고 원하는 상품을 검색해보세요." name="description"/>
-<meta content="index,follow,max-image-preview:large" name="robots"/>
-<link href="https://www.ssagesallae.co.kr/digital.html" rel="canonical"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>가전·디지털 가이드 | 싸게살래</title>
+<meta name="description" content="TV, 청소기, 제습기, 노트북, 이어폰 등 가전·디지털 제품의 가격과 구매 가이드를 확인하세요."/>
+<meta name="robots" content="index,follow,max-image-preview:large"/>
+<link rel="canonical" href="https://www.ssagesallae.co.kr/digital.html"/>
 <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
-<meta content="ko_KR" property="og:locale"/>
-<meta content="website" property="og:type"/>
-<meta content="싸게살래" property="og:site_name"/>
-<meta content="가전·디지털 | 싸게살래" property="og:title"/>
-<meta content="가전·디지털 인기 상품과 쇼핑 정보를 검색하고 비교해보세요." property="og:description"/>
-<meta content="https://www.ssagesallae.co.kr/digital.html" property="og:url"/>
+<meta property="og:locale" content="ko_KR"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="싸게살래"/>
+<meta property="og:title" content="가전·디지털 가이드 | 싸게살래"/>
+<meta property="og:description" content="TV, 청소기, 제습기, 노트북, 이어폰 등 가전·디지털 제품의 가격과 구매 가이드를 확인하세요."/>
+<meta property="og:url" content="https://www.ssagesallae.co.kr/digital.html"/>
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,"Noto Sans KR",sans-serif;color:#181818;background:#fff}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}
-header{border-bottom:1px solid #eee;background:#fff;position:sticky;top:0;z-index:20}
-.topbar{height:84px;display:flex;align-items:center;gap:36px}
-.logo small{display:block;font-size:11px;color:#777;margin-bottom:2px}
-.logo strong{font-size:27px;letter-spacing:-1.5px}
-.logo strong span{color:#ff272d}
-.search{flex:1;display:flex;max-width:620px;border:2px solid #ff272d;border-radius:10px;overflow:hidden;background:#fff}
-.search input{flex:1;border:0;outline:0;padding:15px 16px;font-size:15px;min-width:0}
-.search button{width:58px;border:0;background:#ff272d;color:#fff;font-size:22px;cursor:pointer}
-.home{font-size:14px;font-weight:700;padding:12px 15px;border:1px solid #e5e5e5;border-radius:9px}
-.hero{background:#fafafa;border-bottom:1px solid #f0f0f0;padding:48px 0}
-.eyebrow{font-size:14px;font-weight:700;color:#ff272d;margin:0 0 10px}
-h1{font-size:34px;letter-spacing:-1.5px;margin:0 0 10px}
-.hero p{margin:0;color:#666;line-height:1.7}
-.toolbar{display:flex;justify-content:space-between;align-items:end;gap:20px;padding:34px 0 20px}
-.toolbar h2{margin:0;font-size:22px;letter-spacing:-.8px}
-.count{color:#777;font-size:14px}
-.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:60px}
-.product-card{border:1px solid #e9e9e9;border-radius:14px;overflow:hidden;background:#fff;transition:.18s ease}
-.product-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.08)}
-.card-anchor{display:block;height:100%}
-.thumb{height:180px;display:flex;align-items:center;justify-content:center;background:#f5f5f5;font-size:64px}
-.card-body{padding:20px}
-.badge{display:inline-block;font-size:12px;color:#ff272d;background:#fff0f1;border-radius:999px;padding:6px 9px;margin-bottom:11px;font-weight:700}
-.card-body h2{font-size:18px;line-height:1.45;letter-spacing:-.6px;margin:0 0 9px}
-.card-body p{font-size:14px;line-height:1.6;color:#777;margin:0 0 18px}
-.card-body strong{font-size:14px;color:#ff272d}
-.empty{display:none;text-align:center;padding:70px 20px;color:#777;border:1px dashed #ddd;border-radius:14px;margin-bottom:60px}
-footer{border-top:1px solid #eee;background:#fafafa;padding:28px 0;color:#777;font-size:13px;line-height:1.7}
-@media(max-width:850px){
-  .products{grid-template-columns:repeat(2,1fr)}
-  .topbar{gap:15px}
-  .logo small{display:none}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Pretendard,"Noto Sans KR",Arial,sans-serif;color:#161616;background:#fff;word-break:keep-all}
+a{text-decoration:none;color:inherit}
+button,input{font-family:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+.topbar{height:34px;border-bottom:1px solid #eee;display:flex;align-items:center;font-size:11px;color:#777;background:#fff}
+.topbar b{color:#ef233c}
+
+.main-head{background:#fff;border-bottom:1px solid #ececec}
+.head-row{height:86px;display:grid;grid-template-columns:230px 1fr 230px;align-items:center;gap:26px}
+.brand small{display:block;font-size:11px;color:#777;margin-bottom:4px}
+.logo{font-size:31px;font-weight:900;letter-spacing:-2.3px}
+.logo span{color:#ef233c}
+
+.search{height:44px;border:1.8px solid #ef233c;border-radius:26px;display:flex;overflow:hidden;background:#fff;max-width:520px;width:100%;justify-self:center}
+.search input{flex:1;border:0;outline:0;padding:0 20px;font-size:13px;color:#444;min-width:0}
+.search button{width:52px;border:0;background:#ef233c;color:#fff;font-size:19px;cursor:pointer}
+.head-icons{display:flex;justify-content:flex-end;gap:24px}
+.head-icon{text-align:center;font-size:11px;color:#222;min-width:45px}
+.head-icon i{display:block;font-style:normal;font-size:20px;margin-bottom:5px}
+
+.nav-wrap{background:#fff;border-bottom:1px solid #e8e8e8}
+.nav{height:48px;display:flex;align-items:center;gap:34px;overflow:auto;white-space:nowrap;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{font-size:12px;font-weight:700}
+.nav a.active{color:#ef233c}
+.nav .all{font-weight:900}
+
+.hero{background:#f6f7fb;padding:58px 0 52px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
+.hero-copy .eyebrow{font-size:14px;color:#ef233c;font-weight:900;margin-bottom:18px}
+.hero h1{font-size:43px;line-height:1.2;letter-spacing:-2.5px;margin:0 0 18px}
+.hero h1 span{color:#ef233c}
+.hero p{font-size:15px;color:#6f7580;line-height:1.8;margin:0 0 26px}
+.hero-cta{display:inline-block;padding:14px 20px;border-radius:6px;background:#ef233c;color:#fff;font-size:13px;font-weight:900}
+
+.hero-side{display:grid;grid-template-columns:1fr 195px;gap:18px;align-items:center}
+.illustration{height:245px;position:relative}
+.device{position:absolute;background:linear-gradient(145deg,#fff,#e7e7e7);box-shadow:0 18px 35px rgba(0,0,0,.08);display:grid;place-items:center;color:#7d7d7d}
+.dev-tv{width:170px;height:110px;left:55px;top:60px;border-radius:10px;font-size:50px}
+.dev-cleaner{width:62px;height:205px;left:245px;top:10px;border-radius:34px;transform:rotate(12deg);font-size:42px}
+.dev-laptop{width:145px;height:90px;right:6px;top:120px;border-radius:8px;font-size:42px}
+.sale{position:absolute;left:150px;bottom:0;background:#d6aa78;color:#c8172a;font-weight:900;padding:25px 30px}
+
+.ranking{background:#fff;border-radius:12px;padding:24px 20px;box-shadow:0 8px 24px rgba(0,0,0,.04)}
+.ranking h3{font-size:13px;margin:0 0 18px}
+.ranking ol{margin:0;padding-left:20px}
+.ranking li{font-size:12px;margin:14px 0;color:#333}
+.ranking li span{float:right;color:#ef233c;font-weight:900}
+
+.category-strip{padding:20px 0 34px;background:#fff}
+.categories{display:grid;grid-template-columns:repeat(10,1fr);gap:10px}
+.cat{height:73px;border:1px solid #e6e6e6;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff;transition:.2s}
+.cat:hover{border-color:#efb8bd;transform:translateY(-2px)}
+.cat i{font-style:normal;font-size:22px;margin-bottom:7px}
+.cat span{font-size:11px;font-weight:700}
+
+.content{padding:34px 0 80px}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:18px}
+.section-head h2{font-size:24px;letter-spacing:-1px;margin:0}
+.section-head a{font-size:11px;color:#777}
+.section-kicker{color:#ef233c;font-size:12px;font-weight:900;margin-bottom:7px}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid #e3e3e3;border-radius:13px;overflow:hidden;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.08);border-color:#efc7ca}
+.thumb{height:190px;display:flex;align-items:center;justify-content:center;background:#f1f1f1;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.card-body{padding:18px 18px 20px}
+.tag{display:inline-block;font-size:11px;color:#ef233c;background:#fff0f1;border-radius:20px;padding:5px 9px;font-weight:800;margin-bottom:10px}
+.card h3{font-size:18px;margin:0 0 10px;line-height:1.4}
+.card p{font-size:13px;color:#747f90;line-height:1.65;margin:0 0 15px}
+.link{font-size:13px;font-weight:900;color:#ef233c}
+
+.quick-links{margin-top:48px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;padding:26px}
+.quick-links h2{font-size:21px;margin:0 0 18px}
+.keyword-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.keyword-grid a{background:#f8f8f8;border-radius:8px;padding:12px;text-align:center;font-size:13px;font-weight:700}
+.keyword-grid a:hover{background:#fff0f1;color:#d71932}
+
+.notice{margin-top:28px;background:#fff5f5;border:1px solid #f4d8da;border-radius:10px;padding:16px 18px;font-size:12px;color:#666;line-height:1.6}
+
+footer{background:#181818;color:#c7c7c7;padding:38px 0}
+.footer-inner{display:flex;justify-content:space-between;gap:30px}
+.footer-logo{font-size:25px;font-weight:900;color:#fff}
+.footer-logo span{color:#ef233c}
+footer p{font-size:12px;line-height:1.7}
+.footer-links{display:flex;gap:18px;font-size:12px}
+
+@media(max-width:1050px){
+  .head-row{grid-template-columns:190px 1fr}
+  .head-icons{display:none}
+  .hero-side{grid-template-columns:1fr}
+  .ranking{display:none}
+  .categories{grid-template-columns:repeat(5,1fr)}
 }
-@media(max-width:580px){
-  .wrap{width:min(100% - 24px,1180px)}
-  .topbar{height:auto;padding:12px 0;flex-wrap:wrap}
-  .logo{order:1}
-  .home{order:2;margin-left:auto}
-  .search{order:3;flex-basis:100%;max-width:none}
-  .hero{padding:32px 0}
-  h1{font-size:27px}
-  .products{grid-template-columns:1fr}
+@media(max-width:780px){
+  .wrap{padding:0 16px}
+  .topbar{display:none}
+  .head-row{height:auto;padding:14px 0;display:block}
+  .brand{margin-bottom:12px}
+  .search{max-width:none}
+  .nav{gap:22px}
+  .hero{padding:40px 0}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-side{display:none}
+  .hero h1{font-size:34px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .keyword-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+  .categories{grid-template-columns:repeat(2,1fr)}
+  .cards{grid-template-columns:1fr}
+  .footer-inner{display:block}
+  .footer-links{margin-top:18px;flex-wrap:wrap}
 }
 </style>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"CollectionPage",
-  "name":"가전·디지털",
-  "url":"https://www.ssagesallae.co.kr/digital.html",
-  "isPartOf":{
-    "@type":"WebSite",
-    "name":"싸게살래",
-    "url":"https://www.ssagesallae.co.kr/"
-  }
+
+<style data-digital-search-ui="true">
+.search{position:relative}
+.search-result-box{
+  display:none;
+  position:absolute;
+  top:calc(100% + 8px);
+  left:0;
+  right:0;
+  background:#fff;
+  border:1px solid #ededed;
+  border-radius:14px;
+  box-shadow:0 14px 35px rgba(0,0,0,.12);
+  overflow:hidden;
+  z-index:9999;
 }
-</script>
-<style>
-.thumb{overflow:hidden;background:#f7f7f7!important}
-.thumb img{width:100%;height:100%;object-fit:contain;display:block;padding:12px;box-sizing:border-box}
-</style></head>
+.search-result-box.show{display:block}
+.search-result-box a{
+  display:block;
+  padding:12px 16px;
+  text-decoration:none;
+  color:#222;
+  border-bottom:1px solid #f2f2f2;
+  font-size:13px;
+}
+.search-result-box a:last-child{border-bottom:0}
+.search-result-box a:hover{background:#fff5f5;color:#ef233c}
+.search-result-box .empty{
+  padding:14px 16px;
+  color:#888;
+  font-size:13px;
+}
+</style>
+
+</head>
 <body>
-<header>
-<div class="wrap topbar">
-<a class="logo" href="index.html">
-<small>참 고르고, 잘 사는 <b>쇼핑 가이드</b></small>
-<strong>싸게<span>살래</span></strong>
-</a>
-<form action="digital.html" class="search" id="searchForm" method="get">
-<input aria-label="상품 검색" autocomplete="off" id="searchInput" name="q" placeholder="가전·디지털 상품을 검색해보세요!" type="search"/>
-<button aria-label="검색" type="submit">⌕</button>
-</form>
-<a class="home" href="index.html">메인으로</a>
+
+<div class="topbar">
+  <div class="wrap">참 고르고, 잘 사는 <b>쇼핑 가이드</b></div>
 </div>
+
+<header class="main-head">
+  <div class="wrap head-row">
+    <div class="brand">
+      <small>참 고르고, 잘 사는 쇼핑 가이드</small>
+      <a class="logo" href="index.html">싸게<span>살래</span></a>
+    </div>
+    <form class="search">
+      <input type="search" placeholder="찾고 싶은 상품을 검색해보세요!"/>
+      <button type="submit">⌕</button>
+    </form>
+    <div class="head-icons">
+      <div class="head-icon"><i>♔</i>베스트</div>
+      <div class="head-icon"><i>♡</i>찜한상품</div>
+      <div class="head-icon"><i>♙</i>로그인</div>
+    </div>
+  </div>
 </header>
+
+<div class="nav-wrap">
+  <nav class="wrap nav">
+    <a class="all" href="index.html">☰ &nbsp;전체 카테고리</a>
+    <a class="active" href="digital.html">가전·디지털</a>
+    <a href="#">생활·주방</a>
+    <a href="#">식품·건강</a>
+    <a href="#">뷰티·미용</a>
+    <a href="#">출산·육아</a>
+    <a href="#">스포츠·레저</a>
+    <a href="#">반려동물</a>
+    <a href="#">패션·잡화</a>
+    <a href="#">도서·취미</a>
+  </nav>
+</div>
+
 <main>
 <section class="hero">
-<div class="wrap">
-<p class="eyebrow">가전·디지털 쇼핑 가이드</p>
-<h1>원하는 상품을 빠르게 찾아보세요</h1>
-<p>에어컨, 제습기, 공기청정기, 가습기 등 현재 등록된 상품을 검색하고 상세 정보를 확인할 수 있습니다.</p>
-</div>
-</section>
-<section class="wrap">
-<div class="toolbar">
-<h2 id="resultTitle">가전·디지털 전체 상품</h2>
-<div class="count"><span id="visibleCount">6</span>개 상품</div>
-</div>
-<div class="products" id="productGrid">
-<article class="product-card" data-search="쿠쿠 인스퓨어 제습기 12l 장마철·실내 습도 관리에 유용한 제습기">
-<a aria-label="쿠쿠 인스퓨어 제습기 12L 상세보기" class="card-anchor" href="cuckoo-inspure-dehumidifier-12l.html">
-<div aria-hidden="true" class="thumb"><img alt="쿠쿠 인스퓨어 제습기 12L" loading="lazy" src="cuckoo-inspure-dehumidifier-12l-01.png"/></div>
-<div class="card-body">
-<span class="badge">가전·디지털</span>
-<h2>쿠쿠 인스퓨어 제습기 12L</h2>
-<p>장마철·실내 습도 관리에 유용한 제습기</p>
-<strong>상품 자세히 보기 →</strong>
-</div>
-</a>
-</article>
-<article class="product-card" data-search="삼성전자 삼성 q9000 스탠드형 에어컨 거실용 스탠드형 에어컨 특징과 선택 포인트">
-<a aria-label="삼성전자 삼성 Q9000 스탠드형 에어컨 상세보기" class="card-anchor" href="samsung-q9000-stand-aircon.html">
-<div aria-hidden="true" class="thumb"><img alt="삼성전자 삼성 Q9000 스탠드형 에어컨" loading="lazy" src="samsung-q9000-stand-aircon-01.png"/></div>
-<div class="card-body">
-<span class="badge">가전·디지털</span>
-<h2>삼성전자 삼성 Q9000 스탠드형 에어컨</h2>
-<p>거실용 스탠드형 에어컨 특징과 선택 포인트</p>
-<strong>상품 자세히 보기 →</strong>
-</div>
-</a>
-</article>
-<article class="product-card" data-search="삼성 벽걸이 에어컨 ar07b5150hzs 방·원룸에 활용하기 좋은 벽걸이형 에어컨">
-<a aria-label="삼성 벽걸이 에어컨 AR07B5150HZS 상세보기" class="card-anchor" href="samsung-ar07b5150hzs-aircon.html">
-<div aria-hidden="true" class="thumb"><img alt="삼성 벽걸이 에어컨 AR07B5150HZS" loading="lazy" src="samsung-ar07b5150hzs-aircon-01.png"/></div>
-<div class="card-body">
-<span class="badge">가전·디지털</span>
-<h2>삼성 벽걸이 에어컨 AR07B5150HZS</h2>
-<p>방·원룸에 활용하기 좋은 벽걸이형 에어컨</p>
-<strong>상품 자세히 보기 →</strong>
-</div>
-</a>
-</article>
-<article class="product-card" data-search="듀플렉스 대용량 공기정화 제습기 제습과 공기 관리 기능을 함께 살펴보는 제품">
-<a aria-label="듀플렉스 대용량 공기정화 제습기 상세보기" class="card-anchor" href="duplex-air-purifying-dehumidifier.html">
-<div aria-hidden="true" class="thumb"><img alt="듀플렉스 대용량 공기정화 제습기" loading="lazy" src="duplex-air-purifying-dehumidifier-01.png"/></div>
-<div class="card-body">
-<span class="badge">가전·디지털</span>
-<h2>듀플렉스 대용량 공기정화 제습기</h2>
-<p>제습과 공기 관리 기능을 함께 살펴보는 제품</p>
-<strong>상품 자세히 보기 →</strong>
-</div>
-</a>
-</article>
-<article class="product-card" data-search="쿠쿠 인스퓨어 헤리티지 28평형 공기청정기 넓은 공간용 공기청정기 주요 특징 정리">
-<a aria-label="쿠쿠 인스퓨어 헤리티지 28평형 공기청정기 상세보기" class="card-anchor" href="cuckoo-inspure-heritage-air-purifier.html">
-<div aria-hidden="true" class="thumb"><img alt="쿠쿠 인스퓨어 헤리티지 28평형 공기청정기" loading="lazy" src="cuckoo-inspure-heritage-air-purifier-01.png"/></div>
-<div class="card-body">
-<span class="badge">가전·디지털</span>
-<h2>쿠쿠 인스퓨어 헤리티지 28평형 공기청정기</h2>
-<p>넓은 공간용 공기청정기 주요 특징 정리</p>
-<strong>상품 자세히 보기 →</strong>
-</div>
-</a>
-</article>
-<article class="product-card" data-search="케어팟 스텐 큐브 가습기 스테인리스 구조와 관리 편의성을 살펴보는 가습기">
-<a aria-label="케어팟 스텐 큐브 가습기 상세보기" class="card-anchor" href="carepod-stainless-cube-humidifier.html">
-<div aria-hidden="true" class="thumb"><img alt="케어팟 스텐 큐브 가습기" loading="lazy" src="carepod-stainless-cube-humidifier-01.png"/></div>
-<div class="card-body">
-<span class="badge">가전·디지털</span>
-<h2>케어팟 스텐 큐브 가습기</h2>
-<p>스테인리스 구조와 관리 편의성을 살펴보는 가습기</p>
-<strong>상품 자세히 보기 →</strong>
-</div>
-</a>
-</article>
-</div>
-<div class="empty" id="emptyState">
-      검색 결과가 없습니다. 다른 상품명이나 키워드로 검색해보세요.
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">오늘의 인기 가전·디지털을 똑똑하게 비교하세요!</div>
+      <h1>꼼꼼하게 비교하고<br/><span>싸게 사는 가전·디지털!</span></h1>
+      <p>TV, 청소기, 노트북, 이어폰부터 생활가전까지<br/>구매 전에 꼭 필요한 정보와 가격을 한눈에 확인하세요.</p>
+      <a class="hero-cta" href="#best-products">오늘의 BEST 상품 보러가기 ›</a>
     </div>
+
+    <div class="hero-side">
+      <div class="illustration">
+        <div class="device dev-tv">▣</div>
+        <div class="device dev-cleaner">⌁</div>
+        <div class="device dev-laptop">▰</div>
+        <div class="sale">SALE</div>
+      </div>
+      <aside class="ranking">
+        <h3>🔥 실시간 인기 검색어</h3>
+        <ol>
+          <li>로봇청소기 <span>↑</span></li>
+          <li>무선청소기 <span>↑</span></li>
+          <li>스마트 TV <span>↑</span></li>
+          <li>제습기 <span>↑</span></li>
+          <li>노트북 <span>↑</span></li>
+        </ol>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="category-strip">
+  <div class="wrap categories">
+    <a class="cat" href="index.html"><i>▦</i><span>전체보기</span></a>
+    <a class="cat" href="digital.html"><i>▣</i><span>가전·디지털</span></a>
+    <a class="cat" href="#"><i>♨</i><span>생활·주방</span></a>
+    <a class="cat" href="#"><i>🍎</i><span>식품·건강</span></a>
+    <a class="cat" href="#"><i>♙</i><span>뷰티·미용</span></a>
+    <a class="cat" href="#"><i>👶</i><span>출산·육아</span></a>
+    <a class="cat" href="#"><i>⚽</i><span>스포츠·레저</span></a>
+    <a class="cat" href="#"><i>🚙</i><span>자동차·공구</span></a>
+    <a class="cat" href="#"><i>🐶</i><span>반려동물</span></a>
+    <a class="cat" href="#"><i>◇</i><span>패션·잡화</span></a>
+  </div>
+</section>
+
+<section class="content" id="best-products">
+  <div class="wrap">
+    <div class="section-kicker">가전·디지털 BEST</div>
+    <div class="section-head">
+      <h2>요즘 많이 찾는 가전·디지털 상품</h2>
+      <a href="#">더보기 ›</a>
+    </div>
+
+    <div class="cards">
+
+<a class="card" href="sony-a7c2.html">
+<div class="thumb camera-a7c2">
+<img alt="소니 A7C2 미러리스 카메라" decoding="async" fetchpriority="high" loading="eager" src="sony-a7c2-card.png"/>
+</div>
+<div class="card-body">
+<span class="tag">미러리스 카메라</span>
+<h3>소니 A7C2 최저가 가격 확인하기</h3>
+<p>풀프레임 미러리스 소니 A7C2의 주요 특징과 구매 전 체크포인트를 확인해보세요.</p>
+<span class="link">최저가 확인하기 →</span>
+</div>
+</a>
+<a class="card" href="sony-zv-e10m2k-white.html">
+<div class="thumb product-photo-card">
+<img alt="소니 ZV-E10M2K 화이트 브이로그 카메라" decoding="async" loading="lazy" src="sony-zv-e10m2k-white-card.png"/>
+</div>
+<div class="card-body">
+<span class="tag">브이로그 카메라</span>
+<h3>소니 ZV-E10M2K(화이트) 최저가 가격</h3>
+<p>APS-C 약 26MP 센서와 4K 60p를 지원하는 ZV-E10 II 16-50mm 렌즈킷을 확인해보세요.</p>
+<span class="link">최저가 확인하기 →</span>
+</div>
+</a>
+<a class="card" href="canon-eos-r8.html">
+<div class="thumb product-photo-card">
+<img alt="캐논 EOS R8 풀프레임 미러리스 카메라" decoding="async" loading="lazy" src="canon-eos-r8-card.png"/>
+</div>
+<div class="card-body">
+<span class="tag">풀프레임 카메라</span>
+<h3>캐논 EOS R8 최저가 가격</h3>
+<p>약 24.2MP 풀프레임 센서와 4K 60p 영상 촬영을 지원하는 EOS R8의 주요 특징을 확인해보세요.</p>
+<span class="link">최저가 확인하기 →</span>
+</div>
+</a>
+<a class="card" href="panasonic-lumix-dc-s9.html">
+<div class="thumb product-photo-card">
+<img alt="파나소닉 루믹스 DC-S9 풀프레임 미러리스 카메라" decoding="async" loading="lazy" src="panasonic-lumix-dc-s9-card.png"/>
+</div>
+<div class="card-body">
+<span class="tag">풀프레임 카메라</span>
+<h3>파나소닉 루믹스 DC-S9 최저가 가격</h3>
+<p>24.2MP 풀프레임 센서와 4K·6K 영상 촬영을 지원하는 루믹스 S9의 주요 특징을 확인해보세요.</p>
+<span class="link">최저가 확인하기 →</span>
+</div>
+</a>
+<a class="card" href="nikon-zf-body.html">
+<div class="thumb product-photo-card">
+<img alt="니콘 Z f BODY 풀프레임 미러리스 카메라" decoding="async" fetchpriority="high" loading="eager" src="nikon-zf-body-main.png"/>
+</div>
+<div class="card-body">
+<span class="tag">풀프레임 카메라</span>
+<h3>니콘 Z F BODY 최저가 가격</h3>
+<p>약 24.5MP 풀프레임 센서와 EXPEED 7, 5축 손떨림 보정을 지원하는 니콘 Z f의 주요 특징을 확인해보세요.</p>
+<span class="link">최저가 확인하기 →</span>
+</div>
+</a>
+<a class="card" href="anker-space-q45.html">
+<div class="thumb product-photo-card"><img alt="앤커 사운드코어 Space Q45 무선 헤드폰" decoding="async" loading="lazy" src="anker-space-q45-card.png"/></div>
+<div class="card-body"><span class="tag">노이즈 캔슬링 헤드폰</span><h3>앤커 Q45 최저가</h3>
+<p>Adaptive ANC와 최대 65시간 재생, LDAC을 지원하는 Space Q45의 주요 특징을 확인해보세요.</p>
+<span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="bose-quietcomfort.html">
+<div class="thumb product-photo-card"><img alt="보스 QuietComfort 노이즈 캔슬링 무선 헤드폰" decoding="async" loading="lazy" src="bose-quietcomfort-card.png"/></div>
+<div class="card-body"><span class="tag">노이즈 캔슬링 헤드폰</span><h3>보스 QC 최저가</h3>
+<p>강력한 노이즈 캔슬링과 최대 24시간 배터리를 지원하는 Bose QuietComfort의 주요 특징을 확인해보세요.</p>
+<span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="sony-wh-1000xm5.html">
+<div class="thumb product-photo-card"><img alt="소니 WH-1000XM5 노이즈 캔슬링 무선 헤드폰" decoding="async" loading="lazy" src="sony-wh-1000xm5-card.png"/></div>
+<div class="card-body"><span class="tag">노이즈 캔슬링 헤드폰</span><h3>소니 XM5 최저가</h3>
+<p>8개의 마이크와 Auto NC Optimizer, 최대 30시간 재생을 지원하는 WH-1000XM5의 주요 특징을 확인해보세요.</p>
+<span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="qcy-ht19-melobuds-n60.html">
+<div class="thumb product-photo-card">
+<img alt="QCY HT19 MeloBuds N60 무선 이어폰" decoding="async" loading="lazy" src="qcy-ht19-melobuds-n60-card.png"/>
+</div>
+<div class="card-body">
+<span class="tag">노이즈 캔슬링 이어폰</span>
+<h3>QCY HT19 멜로버즈 N60 최저가</h3>
+<p>최대 56dB ANC, LDAC·Hi-Res, Bluetooth 6.0과 최대 45시간 재생을 지원하는 MeloBuds N60의 주요 특징을 확인해보세요.</p>
+<span class="link">최저가 확인하기 →</span>
+</div>
+</a>
+<a class="card" href="shokz-openfit2-plus.html">
+<div class="thumb product-photo-card">
+<img alt="샥즈 오픈핏2 플러스 오픈형 무선 이어폰" decoding="async" loading="lazy" src="shokz-openfit2-plus-card.png"/>
+</div>
+<div class="card-body">
+<span class="tag">오픈형 무선 이어폰</span>
+<h3>샥즈 오픈핏2+ 최저가</h3>
+<p>오픈형 디자인과 Dolby Audio, 무선 충전을 지원하는 Shokz OpenFit 2+의 주요 특징을 확인해보세요.</p>
+<span class="link">최저가 확인하기 →</span>
+</div>
+</a>
+<a class="card" href="moving-cubix-fhd-qled.html">
+<div class="thumb product-photo-card"><img alt="무빙큐빅스 삼탠바이미 FHD QLED 이동식 스마트 TV" decoding="async" loading="lazy" src="moving-cubix-fhd-qled-card.png"/></div>
+<div class="card-body"><span class="tag">이동식 스마트 TV</span><h3>무빙큐빅스 삼탠바이미 FHD QLED 최저가</h3>
+<p>32인치 FHD QLED 화면과 이동식 스탠드 구성을 갖춘 무빙큐빅스 삼탠바이미의 주요 특징을 확인해보세요.</p>
+<span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="vivre-cordless-vacuum.html">
+<div class="thumb product-photo-card">
+<img alt="비브르 무선청소기" decoding="async" loading="lazy" src="vivre-cordless-vacuum-01.png"/>
+</div>
+<div class="card-body">
+<span class="tag">무선청소기</span>
+<h3>비브르 무선청소기 최저가</h3>
+<p>흡입 성능과 배터리 사용시간, 브러시 구성 및 필터 관리 방법을 자세히 확인해보세요.</p>
+<span class="link">최저가 확인하기 →</span>
+</div>
+</a>
+<a class="card" href="hanil-food-waste.html"><div class="thumb product-photo-card"><img alt="한일 가정용 음식물 처리기" decoding="async" loading="lazy" src="hanil-food-waste-01.png"/></div><div class="card-body"><span class="tag">주방가전</span><h3>한일 음식물 처리기 최저가</h3><p>가정에서 발생하는 음식물 쓰레기의 부피와 냄새 부담을 줄이는 데 도움을 주는 주방가전입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="theham-43-tv.html"><div class="thumb product-photo-card"><img alt="더함 삼탠바이미 43인치" decoding="async" loading="lazy" src="theham-43-tv-01.png"/></div><div class="card-body"><span class="tag">이동식 스마트 TV</span><h3>더함 삼탠바이미 43인치 최저가</h3><p>43인치 스마트 TV와 이동식 스탠드를 결합해 거실, 침실, 서재 등에서 위치를 바꿔 사용할 수 있는 제품 구성입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="samsung-neo-qled-55.html"><div class="thumb product-photo-card"><img alt="삼성 Neo QLED AI TV 55인치" decoding="async" loading="lazy" src="samsung-neo-qled-55-01.png"/></div><div class="card-body"><span class="tag">초대형 프리미엄 TV</span><h3>삼성 Neo QLED 55인치 최저가</h3><p>초대형 화면과 AI 기반 영상·음향 보정 기능을 중심으로 대형 거실이나 상업 공간에서 몰입감 있는 시청 환경을 구성할 수 있는 프리미엄 TV입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="samsung-signage-50.html"><div class="thumb product-photo-card"><img alt="삼성 4K UHD 스마트 사이니지 TV 50인치" decoding="async" loading="lazy" src="samsung-signage-50-01.png"/></div><div class="card-body"><span class="tag">스마트 사이니지</span><h3>삼성 4K UHD 사이니지 50인치 최저가</h3><p>50인치 4K UHD 화면을 기반으로 매장 안내, 회의실, 교육 공간과 일반 콘텐츠 시청에 활용할 수 있는 스마트 사이니지 제품입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="samsung-smart-tv-32.html"><div class="thumb product-photo-card"><img alt="삼성 LED TV 스마트 32인치" decoding="async" loading="lazy" src="samsung-smart-tv-32-01.png"/></div><div class="card-body"><span class="tag">소형 스마트 TV</span><h3>삼성 스마트 TV 32인치 최저가</h3><p>침실, 원룸, 주방과 소형 공간에서 OTT와 방송 콘텐츠를 간편하게 시청할 수 있는 32인치 스마트 LED TV입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="dreame-wet-dry-vacuum.html">
+<div class="thumb product-photo-card"><img alt="드리미 무선 자동 물걸레청소기" decoding="async" loading="lazy" src="dreame-wet-dry-vacuum-01.png"/></div>
+<div class="card-body"><span class="tag">무선 물걸레청소기</span><h3>드리미 자동 물걸레청소기 최저가</h3>
+<p>바닥의 마른 먼지와 젖은 오염을 흡입하면서 롤러 물걸레로 닦아주는 무선 습건식 청소기입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="inic-itower-i50.html">
+<div class="thumb product-photo-card"><img alt="아이닉 무선청소기 아이타워 i50" decoding="async" loading="lazy" src="inic-itower-i50-01.png"/></div>
+<div class="card-body"><span class="tag">타워형 무선청소기</span><h3>아이닉 아이타워 i50 최저가</h3>
+<p>무선청소기 본체와 청소기 보관·충전 기능을 결합한 타워형 구성으로, 바닥 청소와 먼지 관리 편의성을 함께 살펴볼 수 있는 제품입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="homelia-robot-vacuum.html">
+<div class="thumb product-photo-card"><img alt="홈리아 올인원 물걸레 로봇청소기" decoding="async" loading="lazy" src="homelia-robot-vacuum-01.png"/></div>
+<div class="card-body"><span class="tag">올인원 로봇청소기</span><h3>홈리아 올인원 로봇청소기 최저가</h3>
+<p>흡입 청소와 물걸레 청소를 자동으로 수행하고 충전 스테이션을 중심으로 관리하는 올인원 로봇청소기입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="panasonic-bedding-vacuum.html">
+<div class="thumb product-photo-card"><img alt="파나소닉 UV살균 이불 침구청소기" decoding="async" loading="lazy" src="panasonic-bedding-vacuum-01.png"/></div>
+<div class="card-body"><span class="tag">침구청소기</span><h3>파나소닉 UV 침구청소기 최저가</h3>
+<p>매트리스와 이불, 소파 같은 패브릭 표면의 먼지와 이물질을 흡입하고 UV 기능을 보조적으로 활용하는 침구 전용 청소기입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="roborock-f25-ultra.html">
+<div class="thumb product-photo-card"><img alt="로보락 F25 Ultra 스팀 진공 물걸레 청소기" decoding="async" loading="lazy" src="roborock-f25-ultra-01.png"/></div>
+<div class="card-body"><span class="tag">스팀 습건식 청소기</span><h3>로보락 F25 Ultra 최저가</h3>
+<p>바닥의 먼지와 액체 오염을 흡입하면서 물걸레와 스팀 기능을 함께 활용하는 프리미엄 습건식 청소기입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="galaxy-buds4-pro.html">
+<div class="thumb product-photo-card"><img alt="삼성 갤럭시 버즈4 프로" decoding="async" loading="lazy" src="galaxy-buds4-pro-01.png"/></div>
+<div class="card-body"><span class="tag">무선 이어폰</span><h3>갤럭시 버즈4 프로 최저가</h3><p>2-way 스피커와 듀얼 앰프, 24-bit/96kHz 오디오 지원 등 프리미엄 사운드 기능을 갖춘 삼성의 무선 이어폰입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="winix-pposong-22l.html">
+<div class="thumb product-photo-card"><img alt="위닉스 뽀송 인버터 제습기 22L" decoding="async" loading="lazy" src="winix-pposong-22l-01.png"/></div>
+<div class="card-body"><span class="tag">제습기</span><h3>위닉스 뽀송 인버터 22L 최저가</h3><p>일일 제습능력 22L와 제습전용면적 95.0㎡를 갖춘 인버터 방식의 대용량 제습기입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="klizen-handheld-steamer.html">
+<div class="thumb product-photo-card"><img alt="끌리젠 스팀 다리미 핸디형" decoding="async" loading="lazy" src="klizen-handheld-steamer-01.png"/></div>
+<div class="card-body"><span class="tag">핸디형 스팀다리미</span><h3>끌리젠 핸디형 스팀다리미 최저가</h3><p>옷걸이에 걸어둔 상태에서 스팀을 분사해 생활 주름을 빠르게 정리하기 좋은 핸디형 스팀다리미입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="philips-airfryer-4-2l.html">
+<div class="thumb product-photo-card"><img alt="필립스 에어프라이어 바스켓 4.2L" decoding="async" loading="lazy" src="philips-airfryer-4-2l-01.png"/></div>
+<div class="card-body"><span class="tag">에어프라이어</span><h3>필립스 에어프라이어 4.2L 최저가</h3><p>4.2L 바스켓 용량을 갖춘 필립스 에어프라이어로, 소량부터 가족 간식과 간편 요리까지 활용하기 좋은 주방가전입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="samsung-galaxy-book4.html">
+<div class="thumb product-photo-card"><img alt="삼성전자 갤럭시북4" decoding="async" loading="lazy" src="samsung-galaxy-book4-01.png"/></div>
+<div class="card-body"><span class="tag">노트북</span><h3>삼성 갤럭시북4 최저가</h3><p>사무, 학업과 일상적인 콘텐츠 소비에 활용하기 좋은 삼성 갤럭시북 시리즈의 노트북입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+
+    
+<a class="card" href="cuckoo-inspure-dehumidifier-12l.html">
+  <div class="thumb">
+    <img src="cuckoo-inspure-dehumidifier-12l-01.png" alt="쿠쿠 인스퓨어 제습기 12L" loading="lazy">
+    <span class="tag">제습기</span>
+  </div>
+  <div class="card-body">
+    <h3>쿠쿠 인스퓨어 제습기 12L</h3>
+    <p>12L급 제습용량으로 생활 공간의 습도 관리와 빨래 건조 보조에 활용하기 좋은 가정용 제습기</p>
+    <span class="more">자세히 보기 →</span>
+  </div>
+</a>
+
+<a class="card" href="samsung-q9000-stand-aircon.html">
+  <div class="thumb">
+    <img src="samsung-q9000-stand-aircon-01.png" alt="삼성전자 삼성 Q9000 스탠드형 에어컨" loading="lazy">
+    <span class="tag">에어컨</span>
+  </div>
+  <div class="card-body">
+    <h3>삼성전자 삼성 Q9000 스탠드형 에어컨</h3>
+    <p>거실 등 넓은 생활 공간에서 냉방을 고려할 때 살펴보기 좋은 삼성 Q9000 스탠드형 에어컨</p>
+    <span class="more">자세히 보기 →</span>
+  </div>
+</a>
+
+<a class="card" href="samsung-ar07b5150hzs-aircon.html">
+  <div class="thumb">
+    <img src="samsung-ar07b5150hzs-aircon-01.png" alt="삼성 벽걸이 에어컨 AR07B5150HZS" loading="lazy">
+    <span class="tag">에어컨</span>
+  </div>
+  <div class="card-body">
+    <h3>삼성 벽걸이 에어컨 AR07B5150HZS</h3>
+    <p>침실이나 작은 방처럼 개별 공간 냉방용으로 살펴보기 좋은 삼성 벽걸이 에어컨</p>
+    <span class="more">자세히 보기 →</span>
+  </div>
+</a>
+
+<a class="card" href="duplex-air-purifying-dehumidifier.html">
+  <div class="thumb">
+    <img src="duplex-air-purifying-dehumidifier-01.png" alt="듀플렉스 대용량 공기정화 제습기" loading="lazy">
+    <span class="tag">제습기</span>
+  </div>
+  <div class="card-body">
+    <h3>듀플렉스 대용량 공기정화 제습기</h3>
+    <p>습도 관리와 공기정화 기능을 함께 고려하는 분들이 비교하기 좋은 대용량 제습기</p>
+    <span class="more">자세히 보기 →</span>
+  </div>
+</a>
+
+<a class="card" href="cuckoo-inspure-heritage-air-purifier.html">
+  <div class="thumb">
+    <img src="cuckoo-inspure-heritage-air-purifier-01.png" alt="쿠쿠 인스퓨어 헤리티지 28평형 공기청정기" loading="lazy">
+    <span class="tag">공기청정기</span>
+  </div>
+  <div class="card-body">
+    <h3>쿠쿠 인스퓨어 헤리티지 28평형 공기청정기</h3>
+    <p>넓은 생활 공간의 공기 관리를 고려할 때 살펴보기 좋은 28평형 공기청정기</p>
+    <span class="more">자세히 보기 →</span>
+  </div>
+</a>
+
+<a class="card" href="carepod-stainless-cube-humidifier.html">
+  <div class="thumb">
+    <img src="carepod-stainless-cube-humidifier-01.png" alt="케어팟 스텐 큐브 가습기" loading="lazy">
+    <span class="tag">가습기</span>
+  </div>
+  <div class="card-body">
+    <h3>케어팟 스텐 큐브 가습기</h3>
+    <p>스텐 소재와 세척 편의성을 중요하게 보는 분들이 살펴보기 좋은 큐브형 가습기</p>
+    <span class="more">자세히 보기 →</span>
+  </div>
+</a>
+</div>
+<section class="quick-links">
+<h2>가전·디지털 인기 키워드</h2><div class="keyword-grid"><a href="robot-vacuum-guide.html">로봇청소기 추천</a><a href="refrigerator-guide.html">냉장고 추천</a><a href="washing-machine-guide.html">세탁기 추천</a><a href="tv-guide.html">TV 추천</a><a href="air-conditioner-guide.html">에어컨 추천</a><a href="laptop-guide.html">노트북 추천</a><a href="smartphone-guide.html">스마트폰 추천</a><a href="tablet-guide.html">태블릿 추천</a><a href="air-purifier-guide.html">공기청정기 추천</a><a href="dryer-guide.html">건조기 추천</a></div>
+    </section>
+
+    <div class="notice">
+      ※ 이 사이트는 제휴 활동을 통해 일정액의 수수료를 제공받을 수 있습니다. 실제 상품 가격, 재고, 배송 및 판매 조건은 연결된 판매처에서 최종 확인해 주세요.
+    </div>
+  </div>
 </section>
 </main>
+
 <footer>
-<div class="wrap">
-<b>싸게살래</b><br/>
-    ※ 이 사이트는 제휴 활동을 통해 일정액의 수수료를 제공받을 수 있습니다.
-    상품 가격과 판매 조건은 판매처에서 최종 확인해 주세요.
+  <div class="wrap footer-inner">
+    <div>
+      <div class="footer-logo">싸게<span>살래</span></div>
+      <p>꼼꼼하게 비교하고 똑똑하게 구매하는 쇼핑 가이드<br/>가전·디지털부터 생활용품까지 다양한 구매 정보를 제공합니다.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">서비스 소개</a>
+      <a href="#">이용약관</a>
+      <a href="#">개인정보처리방침</a>
+      <a href="#">제휴 안내</a>
+    </div>
   </div>
 </footer>
-<script>
-(function(){
-  const params = new URLSearchParams(window.location.search);
-  const input = document.getElementById('searchInput');
-  const cards = Array.from(document.querySelectorAll('.product-card'));
-  const visibleCount = document.getElementById('visibleCount');
-  const resultTitle = document.getElementById('resultTitle');
-  const emptyState = document.getElementById('emptyState');
-  const form = document.getElementById('searchForm');
 
-  function normalize(v) {
-    return (v || '').toLowerCase().replace(/\s+/g, ' ').trim();
-  }
 
-  function filterProducts(query) {
+
+<script data-digital-search="true">
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form.search");
+  if (!form) return;
+
+  const input = form.querySelector("input");
+  if (!input) return;
+
+  const cards = Array.from(document.querySelectorAll(".cards a.card"));
+
+  const catalog = cards.map(card => {
+    const title = (card.querySelector("h3")?.textContent || "").trim();
+    const tag = (card.querySelector(".tag")?.textContent || "").trim();
+    const desc = (card.querySelector("p")?.textContent || "").trim();
+    const imgAlt = (card.querySelector("img")?.alt || "").trim();
+
+    return {
+      name: title,
+      url: card.getAttribute("href"),
+      searchText: [title, tag, desc, imgAlt].join(" ")
+    };
+  }).filter(item => item.name && item.url);
+
+  const normalize = s => String(s || "")
+    .toLowerCase()
+    .replace(/\s+/g, "")
+    .replace(/[·ㆍ\-_/+()[\]]/g, "");
+
+  let box = document.createElement("div");
+  box.className = "search-result-box";
+  form.appendChild(box);
+
+  function resultsFor(query) {
     const q = normalize(query);
-    let count = 0;
+    if (!q) return [];
 
-    cards.forEach(card => {
-      const haystack = normalize(card.dataset.search);
-      const matched = !q || haystack.includes(q);
-      card.style.display = matched ? '' : 'none';
-      if (matched) count++;
-    });
+    return catalog
+      .map(item => {
+        const name = normalize(item.name);
+        const text = normalize(item.searchText);
+        let score = 0;
 
-    visibleCount.textContent = count;
-    emptyState.style.display = count === 0 ? 'block' : 'none';
-    resultTitle.textContent = q ? '“' + query.trim() + '” 검색 결과' : '가전·디지털 전체 상품';
+        if (name === q) score = 1000;
+        else if (name.startsWith(q)) score = 900;
+        else if (name.includes(q)) score = 800;
+        else if (text.includes(q)) score = 600;
+
+        return {...item, score};
+      })
+      .filter(item => item.score > 0)
+      .sort((a,b) => b.score - a.score)
+      .slice(0, 8);
   }
 
-  const initialQuery = params.get('q') || '';
-  input.value = initialQuery;
-  filterProducts(initialQuery);
+  function render(query) {
+    const results = resultsFor(query);
 
-  form.addEventListener('submit', function(e) {
+    if (!query.trim()) {
+      box.classList.remove("show");
+      box.innerHTML = "";
+      return results;
+    }
+
+    if (!results.length) {
+      box.innerHTML = '<div class="empty">검색 결과가 없습니다.</div>';
+      box.classList.add("show");
+      return results;
+    }
+
+    box.innerHTML = results.map(item =>
+      `<a href="${item.url}">${item.name}</a>`
+    ).join("");
+    box.classList.add("show");
+    return results;
+  }
+
+  input.addEventListener("input", () => render(input.value));
+  input.addEventListener("focus", () => {
+    if (input.value.trim()) render(input.value);
+  });
+
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
     const q = input.value.trim();
-    const url = q ? 'digital.html?q=' + encodeURIComponent(q) : 'digital.html';
-    history.replaceState(null, '', url);
-    filterProducts(q);
+    if (!q) {
+      input.focus();
+      return;
+    }
+    const results = resultsFor(q);
+    if (results.length) {
+      window.location.href = results[0].url;
+    } else {
+      box.innerHTML = '<div class="empty">검색 결과가 없습니다.</div>';
+      box.classList.add("show");
+    }
   });
 
-  input.addEventListener('input', function() {
-    filterProducts(input.value);
+  document.addEventListener("click", function (e) {
+    if (!form.contains(e.target)) box.classList.remove("show");
   });
-})();
+});
 </script>
+
 </body>
 </html>
