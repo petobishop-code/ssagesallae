@@ -29,7 +29,24 @@
   flex:0 0 52px!important
 }
 </style>
-</head>
+<style>
+.products > a.product-link{
+  color:inherit;
+  text-decoration:none;
+  display:block;
+  min-width:0;
+}
+.products > a.product-link article{
+  height:100%;
+  box-sizing:border-box;
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.products > a.product-link:hover article{
+  transform:translateY(-3px);
+  box-shadow:0 10px 28px rgba(0,0,0,.08);
+}
+.ranking li a{color:inherit;text-decoration:none}
+</style></head>
 <body>
 <header class="top">
 <div class="topbar wrap">
@@ -37,9 +54,9 @@
 <small>참 고르고, 잘 사는 <b>쇼핑 가이드</b></small>
 <strong>싸게<span>살래</span></strong>
 </a>
-<form class="search" action="digital.html" method="get">
-<input aria-label="상품 검색" name="q" type="search" placeholder="찾고 싶은 상품을 검색해보세요!" required/>
-<button type="submit" aria-label="검색">⌕</button>
+<form action="digital.html" class="search" method="get">
+<input aria-label="상품 검색" name="q" placeholder="찾고 싶은 상품을 검색해보세요!" required="" type="search"/>
+<button aria-label="검색" type="submit">⌕</button>
 </form>
 <div class="quick">
 <a href="#best">
@@ -118,26 +135,26 @@
         🔥 실시간 인기 검색어
       </h3>
 <ol>
-<li>
+<li><a href="digital.html?q=로봇청소기" style="color:inherit;text-decoration:none;display:flex;justify-content:space-between;width:100%;">
           로봇청소기
           <b>↑</b>
-</li>
-<li>
+</a></li>
+<li><a href="digital.html?q=에어컨" style="color:inherit;text-decoration:none;display:flex;justify-content:space-between;width:100%;">
           에어컨
           <b>↑</b>
-</li>
-<li>
+</a></li>
+<li><a href="digital.html?q=스마트폰" style="color:inherit;text-decoration:none;display:flex;justify-content:space-between;width:100%;">
           갤럭시 스마트폰
           <b>↑</b>
-</li>
+</a></li>
 <li>
           다이어트 건강식품
           <b>↑</b>
 </li>
-<li>
+<li><a href="digital.html?q=냉장고" style="color:inherit;text-decoration:none;display:flex;justify-content:space-between;width:100%;">
           김치냉장고
           <b>↑</b>
-</li>
+</a></li>
 </ol>
 </aside>
 </div>
@@ -146,7 +163,7 @@
 카테고리
 ========================= -->
 <section class="wrap categories" id="categories">
-<a href="#">
+<a href="digital.html">
 <i>
       ▦
     </i>
@@ -236,113 +253,65 @@ BEST 상품
 <h2>
       요즘 많이 찾는 BEST 상품
     </h2>
-<a href="#">
+<a href="digital.html">
       더보기 ›
     </a>
 </div>
 <div class="products">
-<article>
+<a class="product-link" href="cuckoo-inspure-dehumidifier-12l.html"><article>
 <b class="rank">
         1
       </b>
-<div class="product-img robot">
-        ◉
-      </div>
-<h3>
-        로봇청소기 추천 BEST 7
-      </h3>
-<p>
-        인기 제품과 핵심 기능 비교
-      </p>
-<strong>
-        가격 확인하기 →
-      </strong>
-</article>
-<article>
+<div class="product-img robot">💧</div>
+<h3>쿠쿠 인스퓨어 제습기 12L</h3>
+<p>장마철·실내 습도 관리에 유용한 제습기</p>
+<strong>자세히 보기 →</strong>
+</article></a>
+<a class="product-link" href="samsung-q9000-stand-aircon.html"><article>
 <b class="rank">
         2
       </b>
-<div class="product-img refrigerator">
-        ▥
-      </div>
-<h3>
-        대용량 냉장고 추천
-      </h3>
-<p>
-        용량별 구매 포인트 정리
-      </p>
-<strong>
-        가격 확인하기 →
-      </strong>
-</article>
-<article>
+<div class="product-img refrigerator">❄️</div>
+<h3>삼성전자 삼성 Q9000 스탠드형 에어컨</h3>
+<p>거실용 스탠드형 에어컨 특징과 선택 포인트</p>
+<strong>자세히 보기 →</strong>
+</article></a>
+<a class="product-link" href="samsung-ar07b5150hzs-aircon.html"><article>
 <b class="rank">
         3
       </b>
-<div class="product-img dryer">
-        ♨
-      </div>
-<h3>
-        헤어드라이어 추천
-      </h3>
-<p>
-        성능과 사용 편의성 비교
-      </p>
-<strong>
-        가격 확인하기 →
-      </strong>
-</article>
-<article>
+<div class="product-img dryer">🌬️</div>
+<h3>삼성 벽걸이 에어컨 AR07B5150HZS</h3>
+<p>방·원룸에 활용하기 좋은 벽걸이형 에어컨</p>
+<strong>자세히 보기 →</strong>
+</article></a>
+<a class="product-link" href="duplex-air-purifying-dehumidifier.html"><article>
 <b class="rank">
         4
       </b>
-<div class="product-img phone">
-        ▯
-      </div>
-<h3>
-        스마트폰 추천 가이드
-      </h3>
-<p>
-        용도별 인기 모델 살펴보기
-      </p>
-<strong>
-        가격 확인하기 →
-      </strong>
-</article>
-<article>
+<div class="product-img phone">💨</div>
+<h3>듀플렉스 대용량 공기정화 제습기</h3>
+<p>제습과 공기 관리 기능을 함께 살펴보는 제품</p>
+<strong>자세히 보기 →</strong>
+</article></a>
+<a class="product-link" href="cuckoo-inspure-heritage-air-purifier.html"><article>
 <b class="rank">
         5
       </b>
-<div class="product-img aircon">
-        ❄
-      </div>
-<h3>
-        에어컨 추천 BEST 6
-      </h3>
-<p>
-        평형별 선택 가이드
-      </p>
-<strong>
-        가격 확인하기 →
-      </strong>
-</article>
-<article>
+<div class="product-img aircon">🍃</div>
+<h3>쿠쿠 인스퓨어 헤리티지 28평형 공기청정기</h3>
+<p>넓은 공간용 공기청정기 주요 특징 정리</p>
+<strong>자세히 보기 →</strong>
+</article></a>
+<a class="product-link" href="carepod-stainless-cube-humidifier.html"><article>
 <b class="rank">
         6
       </b>
-<div class="product-img watch">
-        ◷
-      </div>
-<h3>
-        스마트워치 추천
-      </h3>
-<p>
-        건강·운동 기능 비교
-      </p>
-<strong>
-        가격 확인하기 →
-      </strong>
-</article>
+<div class="product-img watch">💦</div>
+<h3>케어팟 스텐 큐브 가습기</h3>
+<p>스테인리스 구조와 관리 편의성을 살펴보는 가습기</p>
+<strong>자세히 보기 →</strong>
+</article></a>
 </div>
 </section>
 <!-- =========================
@@ -435,40 +404,40 @@ BEST 상품
     </a>
 </div>
 <div class="keywords">
-<a href="#">
+<a href="digital.html?q=로봇청소기 추천">
       로봇청소기 추천
     </a>
-<a href="#">
+<a href="digital.html?q=에어컨 추천">
       에어컨 추천
     </a>
-<a href="#">
+<a href="digital.html?q=냉장고 추천">
       냉장고 추천
     </a>
-<a href="#">
+<a href="digital.html?q=세탁기 추천">
       세탁기 추천
     </a>
-<a href="#">
+<a href="digital.html?q=스마트폰 추천">
       스마트폰 추천
     </a>
-<a href="#">
+<a href="digital.html?q=아이폰">
       아이폰
     </a>
-<a href="#">
+<a href="digital.html?q=공기청정기">
       공기청정기
     </a>
-<a href="#">
+<a href="digital.html?q=물티슈 추천">
       물티슈 추천
     </a>
-<a href="#">
+<a href="digital.html?q=휴지 추천">
       휴지 추천
     </a>
-<a href="#">
+<a href="digital.html?q=김치냉장고">
       김치냉장고
     </a>
-<a href="#">
+<a href="digital.html?q=정수기 추천">
       정수기 추천
     </a>
-<a href="#">
+<a href="digital.html?q=강아지 사료">
       강아지 사료
     </a>
 </div>
@@ -651,6 +620,5 @@ FOOTER
 
   </div>
 </footer>
-
 </body>
 </html>
