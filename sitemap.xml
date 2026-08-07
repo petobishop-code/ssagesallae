@@ -157,4 +157,28 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.ssagesallae.co.kr/winix-pposong-22l.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ssagesallae.co.kr/klizen-handheld-steamer.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ssagesallae.co.kr/philips-airfryer-4-2l.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ssagesallae.co.kr/samsung-galaxy-book4.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
