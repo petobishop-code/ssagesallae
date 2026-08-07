@@ -448,6 +448,62 @@ details{
   }
 }
 </style>
+
+<style data-cta-class-fix="true">
+/* CTA 클래스 충돌 수정
+   구형: .cta-box = 큰 박스 / a.cta = 버튼
+   신형: div.cta = 큰 박스 / a.btn = 버튼
+*/
+.cta-box,
+div.cta,
+section.cta{
+  background:#ef233c !important;
+  background-image:none !important;
+  color:#fff !important;
+  border-radius:16px !important;
+  box-shadow:none !important;
+}
+.cta-box h1,.cta-box h2,.cta-box h3,.cta-box h4,
+div.cta h1,div.cta h2,div.cta h3,div.cta h4,
+section.cta h1,section.cta h2,section.cta h3,section.cta h4{
+  color:#fff !important;
+}
+.cta-box p,
+div.cta p,
+section.cta p{
+  color:#fff1f2 !important;
+}
+
+/* 구형 상세페이지 버튼 */
+a.cta,
+.cta-box a.cta{
+  display:inline-block !important;
+  background:#fff !important;
+  background-image:none !important;
+  color:#d71932 !important;
+  border:0 !important;
+  border-radius:8px !important;
+  font-weight:900 !important;
+  text-decoration:none !important;
+  box-shadow:none !important;
+}
+a.cta:hover,
+.cta-box a.cta:hover{
+  background:#fff7f7 !important;
+  color:#c4142b !important;
+}
+
+/* 신형 상세페이지 버튼 */
+div.cta a.btn,
+section.cta a.btn,
+.cta-box a.btn{
+  background:#fff !important;
+  color:#d71932 !important;
+  border:0 !important;
+  font-weight:900 !important;
+}
+</style>
+
 </head>
 <body>
 <header class="site-shell">
