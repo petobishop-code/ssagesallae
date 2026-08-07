@@ -245,6 +245,49 @@ footer p{font-size:12px;line-height:1.7}
     padding:11px 13px!important;
   }
 }
+</style><style>
+/* ===== 인기 상품 검색어 리뉴얼 ===== */
+.ranking ol{
+  list-style:none!important;
+  padding:0!important;
+  margin:0!important;
+}
+.ranking li{
+  padding:0!important;
+  border-bottom:1px solid #f1f1f1!important;
+}
+.ranking li:last-child{
+  border-bottom:0!important;
+}
+.ranking-link{
+  display:flex!important;
+  align-items:center!important;
+  width:100%!important;
+  gap:10px!important;
+  padding:10px 2px!important;
+  color:inherit!important;
+  text-decoration:none!important;
+}
+.ranking-num{
+  flex:0 0 22px!important;
+  font-size:12px!important;
+  font-weight:900!important;
+  color:#ef232b!important;
+}
+.ranking-text{
+  flex:1!important;
+  font-size:13px!important;
+  font-weight:700!important;
+  transition:color .15s ease;
+}
+.ranking-go{
+  color:#aaa!important;
+  font-size:18px!important;
+  line-height:1!important;
+}
+.ranking-link:hover .ranking-text{
+  color:#ef232b!important;
+}
 </style></head>
 <body>
 <div class="topbar">
@@ -260,7 +303,6 @@ footer p{font-size:12px;line-height:1.7}
 <input aria-label="상품 검색" name="q" placeholder="찾고 싶은 상품을 검색해보세요!" required="" type="search"/>
 <button aria-label="검색" type="submit">⌕</button>
 </form>
-
 </div>
 </header>
 <div class="nav-wrap">
@@ -294,14 +336,8 @@ footer p{font-size:12px;line-height:1.7}
 <div class="sale">SALE</div>
 </div>
 <aside class="ranking">
-<h3>🔥 실시간 인기 검색어</h3>
-<ol>
-<li>로봇청소기 <span>↑</span></li>
-<li>무선청소기 <span>↑</span></li>
-<li>스마트 TV <span>↑</span></li>
-<li>제습기 <span>↑</span></li>
-<li>노트북 <span>↑</span></li>
-</ol>
+<h3>🔥 지금 많이 찾는 상품</h3>
+<ol><li><a class="ranking-link" href="digital.html?q=로봇청소기"><span class="ranking-num">1</span><span class="ranking-text">로봇청소기</span><span class="ranking-go">›</span></a></li><li><a class="ranking-link" href="digital.html?q=에어컨"><span class="ranking-num">2</span><span class="ranking-text">에어컨</span><span class="ranking-go">›</span></a></li><li><a class="ranking-link" href="digital.html?q=제습기"><span class="ranking-num">3</span><span class="ranking-text">제습기</span><span class="ranking-go">›</span></a></li><li><a class="ranking-link" href="digital.html?q=무선청소기"><span class="ranking-num">4</span><span class="ranking-text">무선청소기</span><span class="ranking-go">›</span></a></li><li><a class="ranking-link" href="digital.html?q=이어폰"><span class="ranking-num">5</span><span class="ranking-text">무선이어폰</span><span class="ranking-go">›</span></a></li></ol>
 </aside>
 </div>
 </div>
