@@ -135,37 +135,16 @@ footer p{font-size:12px;line-height:1.7}
 }
 </style>
 
-<style data-digital-search-ui="true">
-.search{position:relative}
-.search-result-box{
-  display:none;
-  position:absolute;
-  top:calc(100% + 8px);
-  left:0;
-  right:0;
-  background:#fff;
-  border:1px solid #ededed;
-  border-radius:14px;
-  box-shadow:0 14px 35px rgba(0,0,0,.12);
-  overflow:hidden;
-  z-index:9999;
+<style data-native-search-results="true">
+.search{position:relative!important}
+.search button{position:relative!important;z-index:2!important;pointer-events:auto!important;cursor:pointer!important}
+.search-result-note{
+  max-width:1180px;margin:0 auto 18px;padding:14px 28px;
+  background:#fff5f5;border:1px solid #f4d8da;border-radius:10px;
+  font-size:13px;color:#555
 }
-.search-result-box.show{display:block}
-.search-result-box a{
-  display:block;
-  padding:12px 16px;
-  text-decoration:none;
-  color:#222;
-  border-bottom:1px solid #f2f2f2;
-  font-size:13px;
-}
-.search-result-box a:last-child{border-bottom:0}
-.search-result-box a:hover{background:#fff5f5;color:#ef233c}
-.search-result-box .empty{
-  padding:14px 16px;
-  color:#888;
-  font-size:13px;
-}
+.card.search-hidden{display:none!important}
+.card.search-hit{border-color:#ef233c!important;box-shadow:0 10px 26px rgba(239,35,60,.12)!important}
 </style>
 
 </head>
@@ -181,10 +160,10 @@ footer p{font-size:12px;line-height:1.7}
       <small>참 고르고, 잘 사는 쇼핑 가이드</small>
       <a class="logo" href="index.html">싸게<span>살래</span></a>
     </div>
-    <form class="search">
-      <input type="search" placeholder="찾고 싶은 상품을 검색해보세요!"/>
-      <button type="submit">⌕</button>
-    </form>
+    <form class="search" action="digital.html" method="get">
+<input type="search" name="q" placeholder="찾고 싶은 상품을 검색해보세요!" aria-label="상품 검색" required/>
+<button type="submit" aria-label="검색">⌕</button>
+</form>
     <div class="head-icons">
       <div class="head-icon"><i>♔</i>베스트</div>
       <div class="head-icon"><i>♡</i>찜한상품</div>
@@ -485,6 +464,46 @@ footer p{font-size:12px;line-height:1.7}
     <span class="more">자세히 보기 →</span>
   </div>
 </a>
+<a class="card" href="minix-food-waste-3l.html">
+<div class="thumb product-photo-card"><img alt="미닉스 음식물 처리기 3L" decoding="async" loading="lazy" src="minix-food-waste-3l-01.png"/></div>
+<div class="card-body"><span class="tag">음식물 처리기</span><h3>미닉스 음식물 처리기 3L 최저가</h3>
+<p>주방에서 발생하는 음식물 쓰레기의 부피와 냄새 부담을 줄이는 데 활용하기 좋은 3L급 가정용 음식물 처리기입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="dreame-x60-ultra-robot-vacuum.html">
+<div class="thumb product-photo-card"><img alt="드리미 X60 Ultra 로봇청소기" decoding="async" loading="lazy" src="dreame-x60-ultra-robot-vacuum-01.png"/></div>
+<div class="card-body"><span class="tag">로봇청소기</span><h3>드리미 X60 Ultra 로봇청소기 최저가</h3>
+<p>흡입 청소와 물걸레 청소, 자동화된 스테이션 기능을 함께 살펴보는 분들이 비교하기 좋은 프리미엄 로봇청소기입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="airr-cordless-mini-vacuum.html">
+<div class="thumb product-photo-card"><img alt="에어르 무선 미니 청소기" decoding="async" loading="lazy" src="airr-cordless-mini-vacuum-01.png"/></div>
+<div class="card-body"><span class="tag">미니 청소기</span><h3>에어르 무선 미니 청소기 최저가</h3>
+<p>차량, 책상, 소파 틈새처럼 좁은 공간을 간편하게 청소할 때 활용하기 좋은 휴대형 무선 미니 청소기입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="shokz-opendot-2-earbuds.html">
+<div class="thumb product-photo-card"><img alt="샥즈 오픈닷 2 블루투스 이어폰" decoding="async" loading="lazy" src="shokz-opendot-2-earbuds-01.png"/></div>
+<div class="card-body"><span class="tag">블루투스 이어폰</span><h3>샥즈 오픈닷 2 블루투스 이어폰 최저가</h3>
+<p>귀를 완전히 막지 않는 착용감과 일상적인 음악 감상을 함께 고려하는 분들이 살펴보기 좋은 샥즈 오픈닷 2 블루투스 이어폰입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="apple-airpods-pro-3.html">
+<div class="thumb product-photo-card"><img alt="애플 에어팟 프로 3" decoding="async" loading="lazy" src="apple-airpods-pro-3-01.png"/></div>
+<div class="card-body"><span class="tag">무선 이어폰</span><h3>애플 에어팟 프로 3 최저가</h3>
+<p>애플 기기와의 연동성과 프리미엄 무선 이어폰 사용 경험을 중요하게 보는 분들이 살펴보기 좋은 에어팟 프로 3입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="homelia-cordless-vacuum.html">
+<div class="thumb product-photo-card"><img alt="홈리아 무선 청소기 차이슨" decoding="async" loading="lazy" src="homelia-cordless-vacuum-01.png"/></div>
+<div class="card-body"><span class="tag">무선청소기</span><h3>홈리아 무선 청소기 차이슨 최저가</h3>
+<p>일상적인 바닥 청소와 틈새 청소를 간편하게 할 수 있는 홈리아 무선 청소기 차이슨 제품입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="jbl-flip7-bluetooth-speaker.html">
+<div class="thumb product-photo-card"><img alt="JBL FLIP7 무선 블루투스 스피커" decoding="async" loading="lazy" src="jbl-flip7-bluetooth-speaker-01.png"/></div>
+<div class="card-body"><span class="tag">블루투스 스피커</span><h3>JBL FLIP7 무선 블루투스 스피커 최저가</h3>
+<p>휴대성과 무선 연결 편의성을 중심으로 음악을 즐기기 좋은 JBL FLIP7 블루투스 스피커입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="cuckoo-inspure-slim-window-aircon.html">
+<div class="thumb product-photo-card"><img alt="쿠쿠 인스퓨어 초슬림 창문형에어컨" decoding="async" loading="lazy" src="cuckoo-inspure-slim-window-aircon-01.png"/></div>
+<div class="card-body"><span class="tag">창문형 에어컨</span><h3>쿠쿠 인스퓨어 초슬림 창문형에어컨 최저가</h3>
+<p>실외기 설치가 어려운 공간에서 비교하기 좋은 쿠쿠 인스퓨어 초슬림 창문형에어컨입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="cuckoo-twin-pressure-masterchef-6-rice-cooker.html">
+<div class="thumb product-photo-card"><img alt="쿠쿠 트윈프레셔 마스터셰프 6인용 밥솥" decoding="async" loading="lazy" src="cuckoo-twin-pressure-masterchef-6-rice-cooker-01.png"/></div>
+<div class="card-body"><span class="tag">6인용 밥솥</span><h3>쿠쿠 트윈프레셔 마스터셰프 6인용 밥솥 최저가</h3>
+<p>가정에서 다양한 취사 모드와 6인용 용량을 활용하기 좋은 쿠쿠 트윈프레셔 마스터셰프 밥솥입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
+<a class="card" href="inic-auto-dispense-formula-kettle.html">
+<div class="thumb product-photo-card"><img alt="아이닉 자동출수 분유포트 주전자형" decoding="async" loading="lazy" src="inic-auto-dispense-formula-kettle-01.png"/></div>
+<div class="card-body"><span class="tag">자동출수 분유포트</span><h3>아이닉 자동출수 분유포트 주전자형 최저가</h3>
+<p>분유 준비나 온수 사용 시 자동출수와 온도 관리 편의성을 고려하는 분들이 살펴보기 좋은 주전자형 분유포트입니다.</p><span class="link">최저가 확인하기 →</span></div></a>
 </div>
 <section class="quick-links">
 <h2>가전·디지털 인기 키워드</h2><div class="keyword-grid"><a href="robot-vacuum-guide.html">로봇청소기 추천</a><a href="refrigerator-guide.html">냉장고 추천</a><a href="washing-machine-guide.html">세탁기 추천</a><a href="tv-guide.html">TV 추천</a><a href="air-conditioner-guide.html">에어컨 추천</a><a href="laptop-guide.html">노트북 추천</a><a href="smartphone-guide.html">스마트폰 추천</a><a href="tablet-guide.html">태블릿 추천</a><a href="air-purifier-guide.html">공기청정기 추천</a><a href="dryer-guide.html">건조기 추천</a></div>
@@ -514,106 +533,64 @@ footer p{font-size:12px;line-height:1.7}
 
 
 
-<script data-digital-search="true">
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("form.search");
-  if (!form) return;
+<script data-native-query-search="true">
+document.addEventListener("DOMContentLoaded", function(){
+  const params = new URLSearchParams(window.location.search);
+  const qRaw = (params.get("q") || "").trim();
+  if(!qRaw) return;
 
-  const input = form.querySelector("input");
-  if (!input) return;
+  const input = document.querySelector('.search input[name="q"]');
+  if(input) input.value = qRaw;
+
+  const norm = s => String(s || "")
+    .toLowerCase()
+    .replace(/\s+/g,"")
+    .replace(/[·ㆍ\-_/+()[\]]/g,"");
+
+  const q = norm(qRaw);
+
+  // Common aliases / likely typing variations.
+  const aliases = {
+    "미닉스":"아이닉",
+    "아이타워":"아이닉",
+    "쿠쿠제습기":"쿠쿠인스퓨어제습기",
+    "삼성에어컨":"삼성",
+    "로봇청소기":"로봇청소기"
+  };
+  const aliasQ = norm(aliases[qRaw.toLowerCase()] || qRaw);
 
   const cards = Array.from(document.querySelectorAll(".cards a.card"));
+  let hits = [];
 
-  const catalog = cards.map(card => {
-    const title = (card.querySelector("h3")?.textContent || "").trim();
-    const tag = (card.querySelector(".tag")?.textContent || "").trim();
-    const desc = (card.querySelector("p")?.textContent || "").trim();
-    const imgAlt = (card.querySelector("img")?.alt || "").trim();
-
-    return {
-      name: title,
-      url: card.getAttribute("href"),
-      searchText: [title, tag, desc, imgAlt].join(" ")
-    };
-  }).filter(item => item.name && item.url);
-
-  const normalize = s => String(s || "")
-    .toLowerCase()
-    .replace(/\s+/g, "")
-    .replace(/[·ㆍ\-_/+()[\]]/g, "");
-
-  let box = document.createElement("div");
-  box.className = "search-result-box";
-  form.appendChild(box);
-
-  function resultsFor(query) {
-    const q = normalize(query);
-    if (!q) return [];
-
-    return catalog
-      .map(item => {
-        const name = normalize(item.name);
-        const text = normalize(item.searchText);
-        let score = 0;
-
-        if (name === q) score = 1000;
-        else if (name.startsWith(q)) score = 900;
-        else if (name.includes(q)) score = 800;
-        else if (text.includes(q)) score = 600;
-
-        return {...item, score};
-      })
-      .filter(item => item.score > 0)
-      .sort((a,b) => b.score - a.score)
-      .slice(0, 8);
-  }
-
-  function render(query) {
-    const results = resultsFor(query);
-
-    if (!query.trim()) {
-      box.classList.remove("show");
-      box.innerHTML = "";
-      return results;
-    }
-
-    if (!results.length) {
-      box.innerHTML = '<div class="empty">검색 결과가 없습니다.</div>';
-      box.classList.add("show");
-      return results;
-    }
-
-    box.innerHTML = results.map(item =>
-      `<a href="${item.url}">${item.name}</a>`
-    ).join("");
-    box.classList.add("show");
-    return results;
-  }
-
-  input.addEventListener("input", () => render(input.value));
-  input.addEventListener("focus", () => {
-    if (input.value.trim()) render(input.value);
-  });
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const q = input.value.trim();
-    if (!q) {
-      input.focus();
-      return;
-    }
-    const results = resultsFor(q);
-    if (results.length) {
-      window.location.href = results[0].url;
+  cards.forEach(card => {
+    const text = norm(card.textContent + " " + (card.querySelector("img")?.alt || ""));
+    const match = text.includes(q) || text.includes(aliasQ);
+    if(match){
+      card.classList.add("search-hit");
+      hits.push(card);
     } else {
-      box.innerHTML = '<div class="empty">검색 결과가 없습니다.</div>';
-      box.classList.add("show");
+      card.classList.add("search-hidden");
     }
   });
 
-  document.addEventListener("click", function (e) {
-    if (!form.contains(e.target)) box.classList.remove("show");
-  });
+  const contentWrap = document.querySelector("#best-products .wrap");
+  if(contentWrap){
+    const note = document.createElement("div");
+    note.className = "search-result-note";
+    if(hits.length){
+      note.innerHTML = '<b>“' + qRaw.replace(/</g,"&lt;") + '” 검색 결과</b> : ' + hits.length + '개 상품을 찾았습니다.';
+    }else{
+      note.innerHTML = '<b>“' + qRaw.replace(/</g,"&lt;") + '” 검색 결과가 없습니다.</b> 다른 상품명이나 브랜드명으로 검색해보세요.';
+      cards.forEach(card => card.classList.remove("search-hidden"));
+    }
+    contentWrap.insertBefore(note, contentWrap.firstChild);
+  }
+
+  if(hits.length === 1){
+    setTimeout(function(){
+      hits[0].scrollIntoView({behavior:"smooth",block:"center"});
+    },100);
+  }
 });
 </script>
 
