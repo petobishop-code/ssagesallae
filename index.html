@@ -20,35 +20,54 @@
   "url": "https://www.ssagesallae.co.kr/",
   "description": "가전, 생활, 식품, 육아, 반려동물까지 구매 전 꼭 필요한 쇼핑 가이드와 인기 상품 정보를 한눈에 확인하세요.",
   "inLanguage": "ko-KR"
-}</script><style data-native-search-fix="true">
-.search{position:relative!important}
-.search input{position:relative!important;z-index:1!important}
-.search button{
-  position:relative!important;z-index:2!important;
-  pointer-events:auto!important;cursor:pointer!important;
-  flex:0 0 52px!important
+}</script>
+<style data-search-final="true">
+.search{position:relative}
+.search-results{
+  display:none;position:absolute;left:0;right:0;top:calc(100% + 8px);
+  background:#fff;border:1px solid #e7e7e7;border-radius:14px;
+  box-shadow:0 14px 35px rgba(0,0,0,.14);overflow:hidden;z-index:99999
+}
+.search-results.show{display:block}
+.search-results a{display:block;padding:12px 16px;border-bottom:1px solid #f1f1f1;font-size:13px;color:#222;text-decoration:none}
+.search-results a:hover{background:#fff3f4;color:#ef233c}
+.search-results .empty{padding:14px 16px;color:#888;font-size:13px}
+</style>
+<style data-search-button-fix="true">
+.search button,
+#site-search-btn{
+  position:relative !important;
+  z-index:20 !important;
+  pointer-events:auto !important;
+  cursor:pointer !important;
+}
+.search input{
+  position:relative !important;
+  z-index:10 !important;
 }
 </style>
 <style>
-.products > a.product-link{
+/* BEST 상품 대표이미지 표시 보완 */
+.products > .best-product-link{
+  display:block;
   color:inherit;
   text-decoration:none;
-  display:block;
   min-width:0;
 }
-.products > a.product-link article{
+.products > .best-product-link article{
   height:100%;
+}
+.product-img{
+  overflow:hidden;
+}
+.product-img img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+  padding:10px;
   box-sizing:border-box;
-  transition:transform .18s ease, box-shadow .18s ease;
 }
-.products > a.product-link:hover article{
-  transform:translateY(-3px);
-  box-shadow:0 10px 28px rgba(0,0,0,.08);
-}
-.ranking li a{color:inherit;text-decoration:none}
-</style><style>
-.product-img{overflow:hidden;display:flex!important;align-items:center;justify-content:center;background:#f7f7f7!important}
-.product-img img{width:100%;height:100%;object-fit:contain;display:block;padding:8px;box-sizing:border-box}
 </style></head>
 <body>
 <header class="top">
@@ -57,9 +76,9 @@
 <small>참 고르고, 잘 사는 <b>쇼핑 가이드</b></small>
 <strong>싸게<span>살래</span></strong>
 </a>
-<form action="digital.html" class="search" method="get">
-<input aria-label="상품 검색" name="q" placeholder="찾고 싶은 상품을 검색해보세요!" required="" type="search"/>
-<button aria-label="검색" type="submit">⌕</button>
+<form class="search">
+<input aria-label="상품 검색" placeholder="찾고 싶은 상품을 검색해보세요!"/>
+<button aria-label="검색" id="site-search-btn" type="button">⌕</button>
 </form>
 <div class="quick">
 <a href="#best">
@@ -138,26 +157,26 @@
         🔥 실시간 인기 검색어
       </h3>
 <ol>
-<li><a href="digital.html?q=로봇청소기" style="color:inherit;text-decoration:none;display:flex;justify-content:space-between;width:100%;">
+<li>
           로봇청소기
           <b>↑</b>
-</a></li>
-<li><a href="digital.html?q=에어컨" style="color:inherit;text-decoration:none;display:flex;justify-content:space-between;width:100%;">
+</li>
+<li>
           에어컨
           <b>↑</b>
-</a></li>
-<li><a href="digital.html?q=스마트폰" style="color:inherit;text-decoration:none;display:flex;justify-content:space-between;width:100%;">
+</li>
+<li>
           갤럭시 스마트폰
           <b>↑</b>
-</a></li>
+</li>
 <li>
           다이어트 건강식품
           <b>↑</b>
 </li>
-<li><a href="digital.html?q=냉장고" style="color:inherit;text-decoration:none;display:flex;justify-content:space-between;width:100%;">
+<li>
           김치냉장고
           <b>↑</b>
-</a></li>
+</li>
 </ol>
 </aside>
 </div>
@@ -166,7 +185,7 @@
 카테고리
 ========================= -->
 <section class="wrap categories" id="categories">
-<a href="digital.html">
+<a href="#">
 <i>
       ▦
     </i>
@@ -261,7 +280,7 @@ BEST 상품
     </a>
 </div>
 <div class="products">
-<a class="product-link" href="cuckoo-inspure-dehumidifier-12l.html"><article>
+<a class="best-product-link" href="cuckoo-inspure-dehumidifier-12l.html"><article>
 <b class="rank">
         1
       </b>
@@ -270,7 +289,7 @@ BEST 상품
 <p>장마철·실내 습도 관리에 유용한 제습기</p>
 <strong>자세히 보기 →</strong>
 </article></a>
-<a class="product-link" href="samsung-q9000-stand-aircon.html"><article>
+<a class="best-product-link" href="samsung-q9000-stand-aircon.html"><article>
 <b class="rank">
         2
       </b>
@@ -279,7 +298,7 @@ BEST 상품
 <p>거실용 스탠드형 에어컨 특징과 선택 포인트</p>
 <strong>자세히 보기 →</strong>
 </article></a>
-<a class="product-link" href="samsung-ar07b5150hzs-aircon.html"><article>
+<a class="best-product-link" href="samsung-ar07b5150hzs-aircon.html"><article>
 <b class="rank">
         3
       </b>
@@ -288,7 +307,7 @@ BEST 상품
 <p>방·원룸에 활용하기 좋은 벽걸이형 에어컨</p>
 <strong>자세히 보기 →</strong>
 </article></a>
-<a class="product-link" href="duplex-air-purifying-dehumidifier.html"><article>
+<a class="best-product-link" href="duplex-air-purifying-dehumidifier.html"><article>
 <b class="rank">
         4
       </b>
@@ -297,7 +316,7 @@ BEST 상품
 <p>제습과 공기 관리 기능을 함께 살펴보는 제품</p>
 <strong>자세히 보기 →</strong>
 </article></a>
-<a class="product-link" href="cuckoo-inspure-heritage-air-purifier.html"><article>
+<a class="best-product-link" href="cuckoo-inspure-heritage-air-purifier.html"><article>
 <b class="rank">
         5
       </b>
@@ -306,7 +325,7 @@ BEST 상품
 <p>넓은 공간용 공기청정기 주요 특징 정리</p>
 <strong>자세히 보기 →</strong>
 </article></a>
-<a class="product-link" href="carepod-stainless-cube-humidifier.html"><article>
+<a class="best-product-link" href="carepod-stainless-cube-humidifier.html"><article>
 <b class="rank">
         6
       </b>
@@ -407,40 +426,40 @@ BEST 상품
     </a>
 </div>
 <div class="keywords">
-<a href="digital.html?q=로봇청소기 추천">
+<a href="#">
       로봇청소기 추천
     </a>
-<a href="digital.html?q=에어컨 추천">
+<a href="#">
       에어컨 추천
     </a>
-<a href="digital.html?q=냉장고 추천">
+<a href="#">
       냉장고 추천
     </a>
-<a href="digital.html?q=세탁기 추천">
+<a href="#">
       세탁기 추천
     </a>
-<a href="digital.html?q=스마트폰 추천">
+<a href="#">
       스마트폰 추천
     </a>
-<a href="digital.html?q=아이폰">
+<a href="#">
       아이폰
     </a>
-<a href="digital.html?q=공기청정기">
+<a href="#">
       공기청정기
     </a>
-<a href="digital.html?q=물티슈 추천">
+<a href="#">
       물티슈 추천
     </a>
-<a href="digital.html?q=휴지 추천">
+<a href="#">
       휴지 추천
     </a>
-<a href="digital.html?q=김치냉장고">
+<a href="#">
       김치냉장고
     </a>
-<a href="digital.html?q=정수기 추천">
+<a href="#">
       정수기 추천
     </a>
-<a href="digital.html?q=강아지 사료">
+<a href="#">
       강아지 사료
     </a>
 </div>
@@ -623,5 +642,88 @@ FOOTER
 
   </div>
 </footer>
+<script data-search-final="true">
+document.addEventListener("DOMContentLoaded", function(){
+  const catalog = [{"name": "소니 A7C2", "url": "sony-a7c2.html", "keywords": ["소니", "a7c2", "카메라"]}, {"name": "소니 ZV-E10M2K 화이트", "url": "sony-zv-e10m2k-white.html", "keywords": ["소니", "zv-e10m2k", "브이로그", "카메라"]}, {"name": "캐논 EOS R8", "url": "canon-eos-r8.html", "keywords": ["캐논", "eos r8", "r8", "카메라"]}, {"name": "파나소닉 루믹스 DC-S9", "url": "panasonic-lumix-dc-s9.html", "keywords": ["파나소닉", "루믹스", "dc-s9", "s9", "카메라"]}, {"name": "니콘 Z F BODY", "url": "nikon-zf-body.html", "keywords": ["니콘", "zf", "z f", "카메라"]}, {"name": "앤커 Space Q45", "url": "anker-space-q45.html", "keywords": ["앤커", "q45", "헤드폰"]}, {"name": "보스 QuietComfort", "url": "bose-quietcomfort.html", "keywords": ["보스", "quietcomfort", "qc", "헤드폰"]}, {"name": "소니 WH-1000XM5", "url": "sony-wh-1000xm5.html", "keywords": ["소니", "xm5", "1000xm5", "헤드폰"]}, {"name": "QCY HT19 MeloBuds N60", "url": "qcy-ht19-melobuds-n60.html", "keywords": ["qcy", "ht19", "n60", "이어폰"]}, {"name": "샥즈 오픈핏2+", "url": "shokz-openfit2-plus.html", "keywords": ["샥즈", "오픈핏2", "openfit2", "이어폰"]}, {"name": "무빙큐빅스 삼탠바이미 FHD QLED", "url": "moving-cubix-fhd-qled.html", "keywords": ["무빙큐빅스", "삼탠바이미", "qled", "tv"]}, {"name": "비브르 무선청소기", "url": "vivre-cordless-vacuum.html", "keywords": ["비브르", "무선청소기", "청소기"]}, {"name": "LG 공기청정기 제습기 세트", "url": "lg-air-dehumidifier-set.html", "keywords": ["lg", "공기청정기", "제습기"]}, {"name": "한일 음식물 처리기", "url": "hanil-food-waste.html", "keywords": ["한일", "음식물처리기", "음식물 처리기"]}, {"name": "더함 삼탠바이미 43인치", "url": "theham-43-tv.html", "keywords": ["더함", "삼탠바이미", "43인치", "tv"]}, {"name": "삼성 Neo QLED AI TV 55인치", "url": "samsung-neo-qled-55.html", "keywords": ["삼성", "neo qled", "qled", "55인치", "tv"]}, {"name": "삼성 4K UHD 스마트 사이니지 50인치", "url": "samsung-signage-50.html", "keywords": ["삼성", "사이니지", "50인치", "tv"]}, {"name": "삼성 LED 스마트 TV 32인치", "url": "samsung-smart-tv-32.html", "keywords": ["삼성", "32인치", "스마트 tv", "tv"]}, {"name": "드리미 무선 자동 물걸레청소기", "url": "dreame-wet-dry-vacuum.html", "keywords": ["드리미", "물걸레청소기", "청소기"]}, {"name": "아이닉 아이타워 i50", "url": "inic-itower-i50.html", "keywords": ["아이닉", "i50", "무선청소기", "청소기"]}, {"name": "홈리아 올인원 물걸레 로봇청소기", "url": "homelia-robot-vacuum.html", "keywords": ["홈리아", "로봇청소기", "청소기"]}, {"name": "파나소닉 UV살균 이불 침구청소기", "url": "panasonic-bedding-vacuum.html", "keywords": ["파나소닉", "침구청소기", "이불청소기"]}, {"name": "로보락 F25 Ultra", "url": "roborock-f25-ultra.html", "keywords": ["로보락", "f25", "ultra", "물걸레청소기"]}, {"name": "삼성 갤럭시 버즈4 프로", "url": "galaxy-buds4-pro.html", "keywords": ["삼성", "갤럭시 버즈4 프로", "버즈4", "이어폰"]}, {"name": "위닉스 뽀송 인버터 제습기 22L", "url": "winix-pposong-22l.html", "keywords": ["위닉스", "뽀송", "제습기", "22l"]}, {"name": "끌리젠 핸디형 스팀다리미", "url": "klizen-handheld-steamer.html", "keywords": ["끌리젠", "스팀다리미", "다리미"]}, {"name": "필립스 에어프라이어 4.2L", "url": "philips-airfryer-4-2l.html", "keywords": ["필립스", "에어프라이어", "4.2l"]}, {"name": "삼성전자 갤럭시북4", "url": "samsung-galaxy-book4.html", "keywords": ["삼성", "갤럭시북4", "노트북"]}, {"name": "쿠쿠 인스퓨어 제습기 12L", "url": "cuckoo-inspure-dehumidifier-12l.html", "keywords": ["쿠쿠", "인스퓨어", "제습기", "12l"]}, {"name": "삼성전자 삼성 Q9000 스탠드형 에어컨", "url": "samsung-q9000-stand-aircon.html", "keywords": ["삼성", "q9000", "스탠드 에어컨", "에어컨"]}, {"name": "삼성 벽걸이 에어컨 AR07B5150HZS", "url": "samsung-ar07b5150hzs-aircon.html", "keywords": ["삼성", "벽걸이 에어컨", "ar07b5150hzs", "에어컨"]}, {"name": "듀플렉스 대용량 공기정화 제습기", "url": "duplex-air-purifying-dehumidifier.html", "keywords": ["듀플렉스", "공기정화", "제습기"]}, {"name": "쿠쿠 인스퓨어 헤리티지 28평형 공기청정기", "url": "cuckoo-inspure-heritage-air-purifier.html", "keywords": ["쿠쿠", "인스퓨어", "헤리티지", "28평", "공기청정기"]}, {"name": "케어팟 스텐 큐브 가습기", "url": "carepod-stainless-cube-humidifier.html", "keywords": ["케어팟", "스텐 큐브", "가습기"]}];
+  const form = document.querySelector("form.search");
+  if(!form) return;
+  const input = form.querySelector("input");
+  if(!input) return;
+
+  const box = document.createElement("div");
+  box.className = "search-results";
+  form.appendChild(box);
+
+  const norm = s => String(s||"").toLowerCase().replace(/\s+/g,"").replace(/[·ㆍ\-_/+()[\]]/g,"");
+
+  function find(q){
+    q = norm(q);
+    if(!q) return [];
+    return catalog.map(item => {
+      const name = norm(item.name);
+      const keys = [item.name, ...(item.keywords||[])].map(norm);
+      let score = 0;
+      if(name === q) score = 1000;
+      else if(name.startsWith(q)) score = 900;
+      else if(name.includes(q)) score = 800;
+      else if(keys.some(k => k === q)) score = 750;
+      else if(keys.some(k => k.startsWith(q))) score = 700;
+      else if(keys.some(k => k.includes(q))) score = 600;
+      return {...item, score};
+    }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,8);
+  }
+
+  function render(q){
+    const list = find(q);
+    if(!q.trim()){ box.classList.remove("show"); box.innerHTML=""; return list; }
+    if(!list.length){
+      box.innerHTML='<div class="empty">검색 결과가 없습니다.</div>';
+      box.classList.add("show");
+      return list;
+    }
+    box.innerHTML=list.map(x=>`<a href="${x.url}">${x.name}</a>`).join("");
+    box.classList.add("show");
+    return list;
+  }
+
+  input.addEventListener("input", ()=>render(input.value));
+  input.addEventListener("focus", ()=>{ if(input.value.trim()) render(input.value); });
+
+  function runSearch(){
+    const q=input.value.trim();
+    if(!q){ input.focus(); return; }
+    const list=find(q);
+    if(list.length){
+      window.location.href=list[0].url;
+    } else {
+      box.innerHTML='<div class="empty">검색 결과가 없습니다.</div>';
+      box.classList.add("show");
+    }
+  }
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    runSearch();
+  });
+
+  const searchBtn = document.getElementById("site-search-btn");
+  if(searchBtn){
+    searchBtn.addEventListener("click", function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      runSearch();
+    });
+  }
+
+  input.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){
+      e.preventDefault();
+      runSearch();
+    }
+  });
+
+  document.addEventListener("click", e=>{ if(!form.contains(e.target)) box.classList.remove("show"); });
+});
+</script>
 </body>
 </html>
