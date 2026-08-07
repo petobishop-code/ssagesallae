@@ -241,6 +241,111 @@
   font-size:18px;
   line-height:1;
 }
+</style><style>
+/* ===== 상단 우측 퀵메뉴 제거 후 검색 영역 확장 ===== */
+.topbar{
+  grid-template-columns:auto minmax(420px,1fr)!important;
+}
+.search{
+  max-width:none!important;
+}
+.quick{
+  display:none!important;
+}
+
+/* ===== 카테고리 영역 리뉴얼 ===== */
+.categories{
+  display:grid!important;
+  grid-template-columns:repeat(5,1fr)!important;
+  gap:12px!important;
+  padding-top:18px!important;
+  padding-bottom:22px!important;
+}
+.categories .category-card{
+  min-height:72px;
+  display:flex!important;
+  flex-direction:column;
+  align-items:flex-start!important;
+  justify-content:center!important;
+  gap:5px;
+  padding:13px 16px!important;
+  border:1px solid #ececec!important;
+  border-radius:12px!important;
+  background:#fff!important;
+  color:#171717!important;
+  text-decoration:none!important;
+  transition:all .18s ease;
+  box-shadow:0 2px 8px rgba(0,0,0,.015);
+}
+.categories .category-card:hover{
+  border-color:#f2b8bc!important;
+  box-shadow:0 8px 22px rgba(0,0,0,.055);
+  transform:translateY(-2px);
+  background:#fffafa!important;
+}
+.categories .category-card small{
+  display:block;
+  color:#aaa;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.7px;
+  line-height:1;
+}
+.categories .category-card span{
+  display:block;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:-.4px;
+  line-height:1.25;
+}
+.categories .category-card:nth-child(2){
+  border-color:#f1b2b6!important;
+  background:#fff7f7!important;
+}
+.categories .category-card:nth-child(2) small,
+.categories .category-card:nth-child(2) span{
+  color:#ef232b!important;
+}
+
+/* 기존 카테고리 아이콘 스타일 무력화 */
+.categories i{
+  display:none!important;
+}
+
+/* 카테고리 영역 상하 여백 정리 */
+#categories{
+  margin-top:0!important;
+}
+
+@media(max-width:900px){
+  .topbar{
+    grid-template-columns:auto 1fr!important;
+  }
+  .categories{
+    grid-template-columns:repeat(3,1fr)!important;
+  }
+}
+@media(max-width:560px){
+  .topbar{
+    display:flex!important;
+    flex-wrap:wrap!important;
+  }
+  .logo{
+    flex:0 0 auto;
+  }
+  .search{
+    flex:1 1 100%;
+    order:2;
+  }
+  .categories{
+    grid-template-columns:repeat(2,1fr)!important;
+    gap:9px!important;
+  }
+  .categories .category-card{
+    min-height:64px;
+    padding:11px 13px!important;
+  }
+}
 </style></head>
 <body>
 <header class="top">
@@ -253,26 +358,11 @@
 <input aria-label="상품 검색" placeholder="찾고 싶은 상품을 검색해보세요!"/>
 <button aria-label="검색" id="site-search-btn" type="button">⌕</button>
 </form>
-<div class="quick">
-<a href="#best">
-        ♔
-        <span>베스트</span>
-</a>
-<a href="#guide">
-        ♡
-        <span>찜한상품</span>
-</a>
-<a href="#footer">
-        ♙
-        <span>로그인</span>
-</a>
-</div>
+
 </div>
 <nav>
 <div class="wrap navrow">
-<a class="all" href="#categories">
-        ☰   전체 카테고리
-      </a>
+<a class="all" href="#categories">전체 카테고리</a>
 <!-- 가전·디지털 연결 -->
 <a href="digital.html">가전·디지털</a>
 <a href="#">생활·주방</a>
@@ -321,89 +411,7 @@
 <!-- =========================
 카테고리
 ========================= -->
-<section class="wrap categories" id="categories">
-<a href="#">
-<i>
-      ▦
-    </i>
-<span>
-      전체보기
-    </span>
-</a>
-<!-- 가전·디지털 연결 -->
-<a href="digital.html">
-<i>
-      ▣
-    </i>
-<span>
-      가전·디지털
-    </span>
-</a>
-<a href="#">
-<i>
-      ♨
-    </i>
-<span>
-      생활·주방
-    </span>
-</a>
-<a href="#">
-<i>
-      🍎
-    </i>
-<span>
-      식품·건강
-    </span>
-</a>
-<a href="#">
-<i>
-      ♙
-    </i>
-<span>
-      뷰티·미용
-    </span>
-</a>
-<a href="#">
-<i>
-      👶
-    </i>
-<span>
-      출산·육아
-    </span>
-</a>
-<a href="#">
-<i>
-      ⚽
-    </i>
-<span>
-      스포츠·레저
-    </span>
-</a>
-<a href="#">
-<i>
-      🚗
-    </i>
-<span>
-      자동차·공구
-    </span>
-</a>
-<a href="#">
-<i>
-      🐶
-    </i>
-<span>
-      반려동물
-    </span>
-</a>
-<a href="#">
-<i>
-      ♢
-    </i>
-<span>
-      패션·잡화
-    </span>
-</a>
-</section>
+<section class="wrap categories" id="categories"><a class="category-card" href="digital.html"><small>ALL</small><span>전체보기</span></a><a class="category-card" href="digital.html"><small>DIGITAL</small><span>가전·디지털</span></a><a class="category-card" href="#"><small>LIVING</small><span>생활·주방</span></a><a class="category-card" href="#"><small>HEALTH</small><span>식품·건강</span></a><a class="category-card" href="#"><small>BEAUTY</small><span>뷰티·미용</span></a><a class="category-card" href="#"><small>BABY</small><span>출산·육아</span></a><a class="category-card" href="#"><small>SPORTS</small><span>스포츠·레저</span></a><a class="category-card" href="#"><small>AUTO</small><span>자동차·공구</span></a><a class="category-card" href="#"><small>PET</small><span>반려동물</span></a><a class="category-card" href="#"><small>FASHION</small><span>패션·잡화</span></a></section>
 <!-- =========================
 BEST 상품
 ========================= -->
