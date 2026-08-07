@@ -134,6 +134,40 @@ footer p{font-size:12px;line-height:1.7}
   .footer-links{margin-top:18px;flex-wrap:wrap}
 }
 </style>
+
+<style data-digital-search-ui="true">
+.search{position:relative}
+.search-result-box{
+  display:none;
+  position:absolute;
+  top:calc(100% + 8px);
+  left:0;
+  right:0;
+  background:#fff;
+  border:1px solid #ededed;
+  border-radius:14px;
+  box-shadow:0 14px 35px rgba(0,0,0,.12);
+  overflow:hidden;
+  z-index:9999;
+}
+.search-result-box.show{display:block}
+.search-result-box a{
+  display:block;
+  padding:12px 16px;
+  text-decoration:none;
+  color:#222;
+  border-bottom:1px solid #f2f2f2;
+  font-size:13px;
+}
+.search-result-box a:last-child{border-bottom:0}
+.search-result-box a:hover{background:#fff5f5;color:#ef233c}
+.search-result-box .empty{
+  padding:14px 16px;
+  color:#888;
+  font-size:13px;
+}
+</style>
+
 </head>
 <body>
 
@@ -147,9 +181,9 @@ footer p{font-size:12px;line-height:1.7}
       <small>참 고르고, 잘 사는 쇼핑 가이드</small>
       <a class="logo" href="index.html">싸게<span>살래</span></a>
     </div>
-    <form class="search" onsubmit="return false;">
+    <form class="search">
       <input type="search" placeholder="찾고 싶은 상품을 검색해보세요!"/>
-      <button type="button">⌕</button>
+      <button type="submit">⌕</button>
     </form>
     <div class="head-icons">
       <div class="head-icon"><i>♔</i>베스트</div>
@@ -478,11 +512,110 @@ footer p{font-size:12px;line-height:1.7}
   </div>
 </footer>
 
-<script>
-document.querySelector('.search button').onclick=()=>{
-  const q=document.querySelector('.search input').value.trim();
-  if(q) alert('“'+q+'” 검색 기능은 상품 페이지 확장 단계에서 연결할 수 있습니다.');
-};
+
+
+<script data-digital-search="true">
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form.search");
+  if (!form) return;
+
+  const input = form.querySelector("input");
+  if (!input) return;
+
+  const cards = Array.from(document.querySelectorAll(".cards a.card"));
+
+  const catalog = cards.map(card => {
+    const title = (card.querySelector("h3")?.textContent || "").trim();
+    const tag = (card.querySelector(".tag")?.textContent || "").trim();
+    const desc = (card.querySelector("p")?.textContent || "").trim();
+    const imgAlt = (card.querySelector("img")?.alt || "").trim();
+
+    return {
+      name: title,
+      url: card.getAttribute("href"),
+      searchText: [title, tag, desc, imgAlt].join(" ")
+    };
+  }).filter(item => item.name && item.url);
+
+  const normalize = s => String(s || "")
+    .toLowerCase()
+    .replace(/\s+/g, "")
+    .replace(/[·ㆍ\-_/+()[\]]/g, "");
+
+  let box = document.createElement("div");
+  box.className = "search-result-box";
+  form.appendChild(box);
+
+  function resultsFor(query) {
+    const q = normalize(query);
+    if (!q) return [];
+
+    return catalog
+      .map(item => {
+        const name = normalize(item.name);
+        const text = normalize(item.searchText);
+        let score = 0;
+
+        if (name === q) score = 1000;
+        else if (name.startsWith(q)) score = 900;
+        else if (name.includes(q)) score = 800;
+        else if (text.includes(q)) score = 600;
+
+        return {...item, score};
+      })
+      .filter(item => item.score > 0)
+      .sort((a,b) => b.score - a.score)
+      .slice(0, 8);
+  }
+
+  function render(query) {
+    const results = resultsFor(query);
+
+    if (!query.trim()) {
+      box.classList.remove("show");
+      box.innerHTML = "";
+      return results;
+    }
+
+    if (!results.length) {
+      box.innerHTML = '<div class="empty">검색 결과가 없습니다.</div>';
+      box.classList.add("show");
+      return results;
+    }
+
+    box.innerHTML = results.map(item =>
+      `<a href="${item.url}">${item.name}</a>`
+    ).join("");
+    box.classList.add("show");
+    return results;
+  }
+
+  input.addEventListener("input", () => render(input.value));
+  input.addEventListener("focus", () => {
+    if (input.value.trim()) render(input.value);
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const q = input.value.trim();
+    if (!q) {
+      input.focus();
+      return;
+    }
+    const results = resultsFor(q);
+    if (results.length) {
+      window.location.href = results[0].url;
+    } else {
+      box.innerHTML = '<div class="empty">검색 결과가 없습니다.</div>';
+      box.classList.add("show");
+    }
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!form.contains(e.target)) box.classList.remove("show");
+  });
+});
 </script>
+
 </body>
 </html>
