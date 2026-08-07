@@ -198,6 +198,49 @@
     min-height:210px;
   }
 }
+</style><style>
+/* ===== 인기 상품 검색어 실제 링크 ===== */
+.ranking ol{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.ranking li{
+  padding:0!important;
+  border-bottom:1px solid #f1f1f1;
+}
+.ranking li:last-child{
+  border-bottom:0;
+}
+.ranking-link{
+  display:flex;
+  align-items:center;
+  width:100%;
+  gap:10px;
+  padding:10px 2px;
+  color:inherit;
+  text-decoration:none;
+}
+.ranking-link:hover .ranking-text{
+  color:#ef232b;
+}
+.ranking-num{
+  flex:0 0 22px;
+  font-size:12px;
+  font-weight:900;
+  color:#ef232b;
+}
+.ranking-text{
+  flex:1;
+  font-size:13px;
+  font-weight:700;
+  transition:color .15s ease;
+}
+.ranking-go{
+  color:#aaa;
+  font-size:18px;
+  line-height:1;
+}
 </style></head>
 <body>
 <header class="top">
@@ -270,31 +313,8 @@
 </div>
 <div class="hero-art"><div class="hero-products-visual"><div class="hero-products-badge">🔥 오늘 많이 찾는 가전 BEST</div><div class="hero-products-grid"><a class="hero-product-card hero-product-1" href="samsung-q9000-stand-aircon.html"><div class="hero-product-image"><img alt="삼성 Q9000 스탠드형 에어컨" loading="eager" src="samsung-q9000-stand-aircon-01.png"/></div><div class="hero-product-text"><strong>삼성 Q9000</strong><span>스탠드형 에어컨</span></div></a><a class="hero-product-card hero-product-2" href="cuckoo-inspure-dehumidifier-12l.html"><div class="hero-product-image"><img alt="쿠쿠 인스퓨어 제습기 12L" loading="lazy" src="cuckoo-inspure-dehumidifier-12l-01.png"/></div><div class="hero-product-text"><strong>쿠쿠 인스퓨어</strong><span>제습기 12L</span></div></a><a class="hero-product-card hero-product-3" href="carepod-stainless-cube-humidifier.html"><div class="hero-product-image"><img alt="케어팟 스텐 큐브 가습기" loading="lazy" src="carepod-stainless-cube-humidifier-01.png"/></div><div class="hero-product-text"><strong>케어팟 스텐 큐브</strong><span>가습기</span></div></a></div><div class="hero-products-note">상품을 눌러 상세 비교와 가격 정보를 확인해보세요</div></div></div>
 <aside class="ranking">
-<h3>
-        🔥 실시간 인기 검색어
-      </h3>
-<ol>
-<li>
-          로봇청소기
-          <b>↑</b>
-</li>
-<li>
-          에어컨
-          <b>↑</b>
-</li>
-<li>
-          갤럭시 스마트폰
-          <b>↑</b>
-</li>
-<li>
-          다이어트 건강식품
-          <b>↑</b>
-</li>
-<li>
-          김치냉장고
-          <b>↑</b>
-</li>
-</ol>
+<h3>🔥 지금 많이 찾는 상품</h3>
+<ol><li><a class="ranking-link" href="digital.html?q=로봇청소기"><span class="ranking-num">1</span><span class="ranking-text">로봇청소기</span><span class="ranking-go">›</span></a></li><li><a class="ranking-link" href="digital.html?q=에어컨"><span class="ranking-num">2</span><span class="ranking-text">에어컨</span><span class="ranking-go">›</span></a></li><li><a class="ranking-link" href="digital.html?q=제습기"><span class="ranking-num">3</span><span class="ranking-text">제습기</span><span class="ranking-go">›</span></a></li><li><a class="ranking-link" href="digital.html?q=무선청소기"><span class="ranking-num">4</span><span class="ranking-text">무선청소기</span><span class="ranking-go">›</span></a></li><li><a class="ranking-link" href="digital.html?q=이어폰"><span class="ranking-num">5</span><span class="ranking-text">무선이어폰</span><span class="ranking-go">›</span></a></li></ol>
 </aside>
 </div>
 </section>
