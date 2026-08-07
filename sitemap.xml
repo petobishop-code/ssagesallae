@@ -181,4 +181,41 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.ssagesallae.co.kr/cuckoo-inspure-dehumidifier-12l.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ssagesallae.co.kr/samsung-q9000-stand-aircon.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ssagesallae.co.kr/samsung-ar07b5150hzs-aircon.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ssagesallae.co.kr/duplex-air-purifying-dehumidifier.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ssagesallae.co.kr/cuckoo-inspure-heritage-air-purifier.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ssagesallae.co.kr/carepod-stainless-cube-humidifier.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+
 </urlset>
