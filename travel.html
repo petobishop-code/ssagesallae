@@ -1,1 +1,1039 @@
 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+<title>여행 상품 추천 | 해외여행 패키지 비교 | 싸게살래</title>
+
+<meta name="description" content="홍콩, 푸꾸옥, 다낭 등 해외여행 패키지 상품과 여행 일정을 한눈에 비교해보세요. 출발일과 여행 기간, 주요 관광지를 확인하고 원하는 여행 상품을 찾아보세요."/>
+<meta name="robots" content="index,follow,max-image-preview:large"/>
+
+<link rel="canonical" href="https://www.ssagesallae.co.kr/travel.html"/>
+<link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+
+<meta property="og:locale" content="ko_KR"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="싸게살래"/>
+<meta property="og:title" content="여행 상품 추천 | 해외여행 패키지 비교 | 싸게살래"/>
+<meta property="og:description" content="홍콩, 푸꾸옥, 다낭 등 해외여행 패키지 상품과 여행 일정을 비교해보세요."/>
+<meta property="og:url" content="https://www.ssagesallae.co.kr/travel.html"/>
+<meta property="og:image" content="https://www.ssagesallae.co.kr/hongkong-2n3d-travel-01.png"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="여행 상품 추천 | 해외여행 패키지 비교 | 싸게살래"/>
+<meta name="twitter:description" content="홍콩, 푸꾸옥, 다낭 등 해외여행 패키지 상품을 비교해보세요."/>
+<meta name="twitter:image" content="https://www.ssagesallae.co.kr/hongkong-2n3d-travel-01.png"/>
+
+<style>
+*{box-sizing:border-box}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:Pretendard,"Noto Sans KR",Arial,sans-serif;
+  color:#171717;
+  word-break:keep-all;
+  background:#fff;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.wrap{
+  width:100%;
+  max-width:1180px;
+  margin:0 auto;
+  padding-left:28px;
+  padding-right:28px;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.site-shell{
+  position:relative;
+  z-index:100;
+  background:#fff;
+  color:#161616;
+}
+
+.shell-topline{
+  height:34px;
+  border-bottom:1px solid #eee;
+  display:flex;
+  align-items:center;
+  background:#fff;
+  color:#777;
+  font-size:11px;
+}
+
+.shell-topline b{
+  color:#ef233c;
+}
+
+.shell-main{
+  background:#fff;
+  border-bottom:1px solid #ececec;
+}
+
+.shell-headrow{
+  height:86px;
+  display:grid;
+  grid-template-columns:230px 1fr 230px;
+  align-items:center;
+  gap:26px;
+}
+
+.shell-brand{
+  display:block;
+  color:#111;
+  text-decoration:none;
+  line-height:1.05;
+}
+
+.shell-brand small{
+  display:block;
+  font-size:11px;
+  color:#777;
+  margin-bottom:5px;
+  font-weight:400;
+}
+
+.shell-brand strong{
+  display:block;
+  font-size:31px;
+  font-weight:900;
+  letter-spacing:-2.3px;
+}
+
+.shell-brand strong span{
+  color:#ef233c;
+}
+
+.shell-search{
+  height:44px;
+  border:1.8px solid #ef233c;
+  border-radius:26px;
+  display:flex;
+  overflow:hidden;
+  background:#fff;
+  max-width:520px;
+  width:100%;
+  justify-self:center;
+}
+
+.shell-search input{
+  flex:1;
+  border:0;
+  outline:0;
+  padding:0 20px;
+  font-size:13px;
+  color:#444;
+  min-width:0;
+  background:#fff;
+}
+
+.shell-search button{
+  width:52px;
+  border:0;
+  background:#ef233c;
+  color:#fff;
+  font-size:19px;
+  cursor:pointer;
+}
+
+.shell-quick{
+  display:flex;
+  justify-content:flex-end;
+  gap:24px;
+}
+
+.shell-quick a{
+  min-width:45px;
+  text-align:center;
+  font-size:11px;
+  color:#222;
+}
+
+.shell-quick i{
+  display:block;
+  font-style:normal;
+  font-size:20px;
+  line-height:1;
+  margin-bottom:6px;
+}
+
+.shell-quick span{
+  display:block;
+}
+
+.shell-navbar{
+  background:#fff;
+  border-bottom:1px solid #e8e8e8;
+}
+
+.shell-nav{
+  height:48px;
+  display:flex;
+  align-items:center;
+  gap:34px;
+  overflow-x:auto;
+  white-space:nowrap;
+  scrollbar-width:none;
+}
+
+.shell-nav::-webkit-scrollbar{
+  display:none;
+}
+
+.shell-nav a{
+  font-size:12px;
+  font-weight:700;
+  color:#222;
+  flex:0 0 auto;
+}
+
+.shell-nav .shell-active{
+  color:#ef233c;
+}
+
+.shell-nav .shell-all{
+  font-weight:900;
+}
+
+/* ================================
+   PAGE
+================================ */
+
+.page{
+  padding-top:45px;
+  padding-bottom:70px;
+}
+
+.page-title{
+  text-align:center;
+  padding:25px 0 42px;
+}
+
+.page-title .kicker{
+  color:#ef233c;
+  font-size:13px;
+  font-weight:800;
+  margin-bottom:10px;
+}
+
+.page-title h1{
+  margin:0;
+  font-size:38px;
+  line-height:1.3;
+  letter-spacing:-1.5px;
+}
+
+.page-title p{
+  margin:15px 0 0;
+  color:#6f7580;
+  font-size:15px;
+  line-height:1.8;
+}
+
+/* ================================
+   CATEGORY MENU
+================================ */
+
+.travel-menu{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-bottom:42px;
+  flex-wrap:wrap;
+}
+
+.travel-menu a{
+  padding:10px 20px;
+  border:1px solid #e5e5e5;
+  border-radius:22px;
+  background:#fff;
+  font-size:13px;
+  font-weight:700;
+  color:#555;
+}
+
+.travel-menu a.active{
+  background:#ef233c;
+  border-color:#ef233c;
+  color:#fff;
+}
+
+/* ================================
+   PRODUCT SECTION
+================================ */
+
+.section-head{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  margin-bottom:20px;
+}
+
+.section-head h2{
+  margin:0;
+  font-size:24px;
+  letter-spacing:-.8px;
+}
+
+.section-head p{
+  margin:0;
+  color:#888;
+  font-size:13px;
+}
+
+/* ================================
+   PRODUCT GRID
+================================ */
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.product-card{
+  display:block;
+  background:#fff;
+  border:1px solid #e6e6e6;
+  border-radius:16px;
+  overflow:hidden;
+  transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+
+.product-card:hover{
+  transform:translateY(-3px);
+  border-color:#efb8bd;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
+
+.product-thumb{
+  width:100%;
+  aspect-ratio:1.25/1;
+  background:#f5f5f5;
+  overflow:hidden;
+}
+
+.product-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.product-info{
+  padding:20px 20px 22px;
+}
+
+.product-category{
+  display:inline-block;
+  color:#ef233c;
+  font-size:12px;
+  font-weight:800;
+  margin-bottom:9px;
+}
+
+.product-info h3{
+  margin:0 0 10px;
+  font-size:19px;
+  line-height:1.45;
+  letter-spacing:-.5px;
+}
+
+.product-info p{
+  margin:0;
+  color:#697386;
+  font-size:14px;
+  line-height:1.7;
+  min-height:48px;
+}
+
+.product-bottom{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-top:18px;
+  padding-top:15px;
+  border-top:1px solid #eee;
+}
+
+.product-period{
+  font-size:12px;
+  color:#777;
+}
+
+.product-link{
+  color:#ef233c;
+  font-size:12px;
+  font-weight:800;
+}
+
+/* ================================
+   GUIDE BOX
+================================ */
+
+.guide{
+  margin-top:55px;
+  padding:30px;
+  background:#fff8f8;
+  border:1px solid #f0d7d9;
+  border-radius:16px;
+}
+
+.guide h2{
+  margin:0 0 12px;
+  font-size:21px;
+}
+
+.guide p{
+  margin:0;
+  color:#606978;
+  font-size:14px;
+  line-height:1.8;
+}
+
+.guide-list{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:20px;
+}
+
+.guide-item{
+  background:#fff;
+  border:1px solid #eee1e2;
+  border-radius:12px;
+  padding:18px;
+}
+
+.guide-item b{
+  display:block;
+  margin-bottom:7px;
+  font-size:14px;
+  color:#ef233c;
+}
+
+.guide-item span{
+  display:block;
+  color:#687282;
+  font-size:13px;
+  line-height:1.7;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+.site-footer{
+  background:#181818;
+  color:#c7c7c7;
+  padding:38px 0;
+}
+
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.footer-logo{
+  font-size:25px;
+  font-weight:900;
+  color:#fff;
+}
+
+.footer-logo span{
+  color:#ef233c;
+}
+
+.site-footer p{
+  color:#bcbcbc;
+  font-size:12px;
+  line-height:1.7;
+  margin:10px 0 0;
+}
+
+.footer-links{
+  display:flex;
+  align-items:flex-start;
+  gap:18px;
+  font-size:12px;
+}
+
+.footer-links a{
+  color:#ddd;
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media(max-width:900px){
+
+  .shell-headrow{
+    grid-template-columns:190px 1fr;
+  }
+
+  .shell-quick{
+    display:none;
+  }
+
+  .product-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .guide-list{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:680px){
+
+  .wrap{
+    padding-left:16px;
+    padding-right:16px;
+  }
+
+  .shell-topline{
+    display:none;
+  }
+
+  .shell-headrow{
+    display:block;
+    height:auto;
+    padding-top:14px;
+    padding-bottom:14px;
+  }
+
+  .shell-brand{
+    margin-bottom:12px;
+  }
+
+  .shell-brand strong{
+    font-size:27px;
+  }
+
+  .shell-search{
+    max-width:none;
+  }
+
+  .shell-nav{
+    height:46px;
+    gap:22px;
+  }
+
+  .page{
+    padding-top:25px;
+  }
+
+  .page-title{
+    padding:20px 0 30px;
+  }
+
+  .page-title h1{
+    font-size:30px;
+  }
+
+  .page-title p{
+    font-size:14px;
+  }
+
+  .product-grid{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  .product-thumb{
+    aspect-ratio:1.4/1;
+  }
+
+  .section-head{
+    display:block;
+  }
+
+  .section-head p{
+    margin-top:7px;
+  }
+
+  .guide{
+    padding:23px 20px;
+  }
+
+  .footer-inner{
+    display:block;
+  }
+
+  .footer-links{
+    margin-top:20px;
+    flex-wrap:wrap;
+  }
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"CollectionPage",
+  "name":"여행 상품 추천 | 해외여행 패키지 비교",
+  "description":"홍콩, 푸꾸옥, 다낭 등 해외여행 패키지 상품과 여행 일정을 비교해보세요.",
+  "url":"https://www.ssagesallae.co.kr/travel.html",
+  "isPartOf":{
+    "@type":"WebSite",
+    "name":"싸게살래",
+    "url":"https://www.ssagesallae.co.kr/"
+  }
+}
+</script>
+
+</head>
+
+<body>
+
+<header class="site-shell">
+
+  <div class="shell-topline">
+    <div class="wrap">
+      참 고르고, 잘 사는 <b>쇼핑 가이드</b>
+    </div>
+  </div>
+
+  <div class="shell-main">
+    <div class="wrap shell-headrow">
+
+      <a class="shell-brand" href="index.html">
+        <small>참 고르고, 잘 사는 쇼핑 가이드</small>
+        <strong>싸게<span>살래</span></strong>
+      </a>
+
+      <form class="shell-search" onsubmit="return false;">
+        <input
+          aria-label="상품 검색"
+          placeholder="찾고 싶은 상품을 검색해보세요!"
+        />
+        <button type="button" aria-label="검색">⌕</button>
+      </form>
+
+      <div class="shell-quick">
+        <a href="travel.html">
+          <i>♔</i>
+          <span>베스트</span>
+        </a>
+
+        <a href="travel.html">
+          <i>♡</i>
+          <span>찜한상품</span>
+        </a>
+
+        <a href="index.html">
+          <i>♙</i>
+          <span>로그인</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="shell-navbar">
+    <nav class="wrap shell-nav">
+
+      <a class="shell-all" href="index.html">
+        ☰ &nbsp;전체 카테고리
+      </a>
+
+      <a href="digital.html">
+        가전·디지털
+      </a>
+
+      <a href="#">
+        생활·주방
+      </a>
+
+      <a href="#">
+        식품·건강
+      </a>
+
+      <a href="#">
+        뷰티·미용
+      </a>
+
+      <a href="#">
+        출산·육아
+      </a>
+
+      <a href="#">
+        스포츠·레저
+      </a>
+
+      <a href="#">
+        반려동물
+      </a>
+
+      <a href="#">
+        패션·잡화
+      </a>
+
+      <a href="#">
+        도서·취미
+      </a>
+
+      <a class="shell-active" href="travel.html">
+        여행
+      </a>
+
+    </nav>
+  </div>
+
+</header>
+
+
+<main class="wrap page">
+
+  <section class="page-title">
+
+    <div class="kicker">
+      싸게살래 TRAVEL
+    </div>
+
+    <h1>
+      여행 상품 추천
+    </h1>
+
+    <p>
+      해외여행 패키지와 여행 상품을 한눈에 비교하고<br/>
+      일정과 주요 관광지를 확인해보세요.
+    </p>
+
+  </section>
+
+
+  <nav class="travel-menu" aria-label="여행 카테고리">
+
+    <a class="active" href="travel.html">
+      전체 여행
+    </a>
+
+    <a href="hongkong-2n3d-travel.html">
+      홍콩
+    </a>
+
+    <a href="phu-quoc-package-3n5d.html">
+      푸꾸옥
+    </a>
+
+    <a href="danang-package-3n5d.html">
+      다낭
+    </a>
+
+  </nav>
+
+
+  <section>
+
+    <div class="section-head">
+
+      <h2>
+        인기 해외여행 상품
+      </h2>
+
+      <p>
+        여행 일정과 상품 조건을 확인해보세요.
+      </p>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+      <!-- 홍콩 -->
+
+      <a class="product-card" href="hongkong-2n3d-travel.html">
+
+        <div class="product-thumb">
+          <img
+            src="hongkong-2n3d-travel-01.png"
+            alt="홍콩 2박3일 여행"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            홍콩 해외여행
+          </div>
+
+          <h3>
+            홍콩 2박3일 여행
+          </h3>
+
+          <p>
+            핵심 관광과 자유시간을 함께 즐길 수 있는
+            홍콩 2박3일 여행 상품입니다.
+          </p>
+
+          <div class="product-bottom">
+
+            <span class="product-period">
+              2박 3일 · 인천 출발
+            </span>
+
+            <span class="product-link">
+              상품 보기 →
+            </span>
+
+          </div>
+
+        </div>
+
+      </a>
+
+
+      <!-- 푸꾸옥 -->
+
+      <a class="product-card" href="phu-quoc-package-3n5d.html">
+
+        <div class="product-thumb">
+          <img
+            src="phu-quoc-package-3n5d-01.png"
+            alt="푸꾸옥 패키지 3박5일"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            베트남 푸꾸옥
+          </div>
+
+          <h3>
+            푸꾸옥 패키지 3박5일
+          </h3>
+
+          <p>
+            빈펄사파리와 혼똔섬, 마사지 등을 포함한
+            푸꾸옥 3박5일 패키지입니다.
+          </p>
+
+          <div class="product-bottom">
+
+            <span class="product-period">
+              3박 5일 · 티웨이항공
+            </span>
+
+            <span class="product-link">
+              상품 보기 →
+            </span>
+
+          </div>
+
+        </div>
+
+      </a>
+
+
+      <!-- 다낭 -->
+
+      <a class="product-card" href="danang-package-3n5d.html">
+
+        <div class="product-thumb">
+          <img
+            src="danang-package-3n5d-01.png"
+            alt="다낭 3박5일 패키지"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            베트남 다낭
+          </div>
+
+          <h3>
+            다낭 3박5일 패키지
+          </h3>
+
+          <p>
+            바나힐과 호이안, 한시장 등을 둘러볼 수 있는
+            다낭 3박5일 여행 패키지입니다.
+          </p>
+
+          <div class="product-bottom">
+
+            <span class="product-period">
+              3박 5일 · 티웨이항공
+            </span>
+
+            <span class="product-link">
+              상품 보기 →
+            </span>
+
+          </div>
+
+        </div>
+
+      </a>
+
+
+    </div>
+
+  </section>
+
+
+  <section class="guide">
+
+    <h2>
+      해외여행 상품 고를 때 확인할 점
+    </h2>
+
+    <p>
+      같은 지역이라도 항공편, 여행 기간, 포함 관광지와 식사,
+      쇼핑 일정 등에 따라 상품 조건이 달라질 수 있습니다.
+      예약 전 세부 일정과 출발일, 포함 사항을 꼼꼼하게 확인해보세요.
+    </p>
+
+
+    <div class="guide-list">
+
+      <div class="guide-item">
+
+        <b>
+          여행 기간
+        </b>
+
+        <span>
+          2박3일, 3박5일 등 실제 체류 일정과
+          출발·도착 시간을 확인하세요.
+        </span>
+
+      </div>
+
+
+      <div class="guide-item">
+
+        <b>
+          포함 일정
+        </b>
+
+        <span>
+          주요 관광지와 선택관광, 자유시간,
+          식사와 마사지 등의 포함 여부를 확인하세요.
+        </span>
+
+      </div>
+
+
+      <div class="guide-item">
+
+        <b>
+          예약 조건
+        </b>
+
+        <span>
+          항공사, 출발확정 여부, 쇼핑 횟수,
+          추가 비용과 취소·환불 조건을 확인하세요.
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="wrap footer-inner">
+
+    <div>
+
+      <div class="footer-logo">
+        싸게<span>살래</span>
+      </div>
+
+      <p>
+        꼼꼼하게 비교하고 똑똑하게 구매하는 쇼핑 가이드<br/>
+        가전·디지털부터 여행 상품까지 다양한 정보를 제공합니다.
+      </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="index.html">
+        홈
+      </a>
+
+      <a href="digital.html">
+        가전·디지털
+      </a>
+
+      <a href="travel.html">
+        여행
+      </a>
+
+      <a href="#">
+        이용약관
+      </a>
+
+      <a href="#">
+        개인정보처리방침
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+(function(){
+
+  var btn=document.querySelector('.shell-search button');
+  var input=document.querySelector('.shell-search input');
+
+  if(btn && input){
+
+    btn.addEventListener('click',function(){
+
+      var q=input.value.trim();
+
+      if(q){
+
+        window.location.href='travel.html';
+
+      }
+
+    });
+
+  }
+
+})();
+</script>
+
+
+</body>
+</html>
