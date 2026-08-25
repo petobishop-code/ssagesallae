@@ -230,19 +230,40 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
   <url>
     <loc>https://www.ssagesallae.co.kr/voar-portable-electric-kettle.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
   <url>
     <loc>https://www.ssagesallae.co.kr/inic-air-fryer-16l.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
   <url>
     <loc>https://www.ssagesallae.co.kr/dibea-cordless-vacuum.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+  <url>
+  <loc>https://www.ssagesallae.co.kr/roborock-qrevo-curv-2-flow.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.ssagesallae.co.kr/logitech-m650-wireless-mouse.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://www.ssagesallae.co.kr/tefal-rk535.html</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
 </urlset>
